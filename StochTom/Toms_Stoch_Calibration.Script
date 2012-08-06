@@ -6,24 +6,39 @@
 	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
 </launch>
 
-<reset/>
-<restart/>
-
-
 <scramble/>
-
-
 
 <?include VarRoster.Script ?>
 <?include ParmRoster.Script ?>
 <?include RandRoster.Script ?>
-
 
 <dumproster>
   <filename> Test.txt</filename>
 </dumproster>
 
 <continueonerror/>
+
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
 
 <?include Normal.Script ?>
 <?include Normal.Script ?>

@@ -6,7 +6,8 @@
 
 <var><name> MCFP </name></var>
 <parm><name> V0 </name><val> 3500.0 </val></parm>
-
+<parm><name> slope_a </name><val> 0.28 </val></parm>
+<parm><name> slope_b </name><val> 0.72 </val></parm>
 <parm><name> SlopeB </name><val> 0.0047 </val></parm>
 <var><name> Slope </name></var>
 <var><name> RVR </name></var>
@@ -54,7 +55,7 @@
 
 <def>
   <name> Slope </name>
-  <val> SlopeB * BaroreceptorReflex.SYM </val>
+  <val> SlopeB * ( slope_a * BaroreceptorReflex.SYM + slope_b )</val>
 </def>
 
 <def>
@@ -82,8 +83,8 @@
 </block>
 
 <block><name> TestCO </name>
-<def><name> CO </name><val> HS * StarlingA * ( ( RAP + 4 MAX 0 ) ^ Starlingm ) / ( ( ( RAP + 4 MAX 0 ) ^ Starlingm ) + ( StarlingS ^ Starlingm ) )  MAX 0 </val></def>
-<!--<def><name> CO </name><val> Starling [ RAP ] </val></def>-->
+<!--<def><name> CO </name><val> HS * StarlingA * ( ( RAP + 4 MAX 0 ) ^ Starlingm ) / ( ( ( RAP + 4 MAX 0 ) ^ Starlingm ) + ( StarlingS ^ Starlingm ) )  MAX 0 </val></def>-->
+<def><name> CO </name><val> Starling [ RAP ] </val></def>
 
 </block>
 </definitions>

@@ -13,19 +13,14 @@
 	<displayint> 1440 </displayint>
 </gofor>
 
-<dumppoint>
-  <filename> TestSH.txt </filename>
-<append/>
-</dumppoint>
-
 <setvalue>
   <var> FluidVolumes.Loss </var>
-  <val> 10 </val>
+  <val> 23 </val>
 </setvalue>
 
 <gofor>
-	<solutionint> 70.0 </solutionint>
-	<displayint> 10.0 </displayint>
+	<solutionint> 60.0 </solutionint>
+	<displayint> 15.0 </displayint>
 </gofor>
 
 <dumpsegment>

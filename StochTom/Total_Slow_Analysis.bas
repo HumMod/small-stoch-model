@@ -1,4 +1,4 @@
-Attribute VB_Name = "Module1"
+Attribute VB_Name = "Module11"
 Sub AnalysisPackage()
 
 Dim Bins(1 To 100) As Integer
@@ -13,14 +13,13 @@ Next i
 
 Open_fast
 MAP_Sheet
-Sheets("TestFH").Select
+Sheets("TestSH").Select
 Do While Range("B3") <> ""
     If Range("B3").Value <> 28800 Then
         Rows("3:3").Select
         Selection.Delete Shift:=xlUp
     Else
         MAP = Round(Range("F3").Value - Range("F7").Value)
-        If MAP > 100 Then MAP = 100
         Bins(MAP) = Bins(MAP) + 1
         Separate_Fast
     End If
@@ -49,7 +48,7 @@ Attribute Open_fast.VB_ProcData.VB_Invoke_Func = " \n14"
 '
     ChDir "C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\StochTom"
     Workbooks.OpenText Filename:= _
-        "C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\StochTom\TestFH.txt" _
+        "C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\StochTom\TestSH.txt" _
         , Origin:=437, StartRow:=1, DataType:=xlDelimited, TextQualifier:= _
         xlDoubleQuote, ConsecutiveDelimiter:=True, Tab:=True, Semicolon:=False, _
         Comma:=False, Space:=True, Other:=False, FieldInfo:=Array(Array(1, 1), _
@@ -89,7 +88,7 @@ Dim MAP As Integer
     Range("A1").Select
     Application.CutCopyMode = False
     ActiveCell.FormulaR1C1 = ""
-    Sheets("TestFH").Select
+    Sheets("TestSH").Select
     Rows("3:7").Select
     Selection.Delete Shift:=xlUp
     Range("A2").Select
