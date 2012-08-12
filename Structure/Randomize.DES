@@ -1,0 +1,90 @@
+
+<structure><name> Randomize </name>
+
+<variables>
+
+<normaldist><name> V0 </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SlopeB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> HSBasic </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> RDrop </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Intake </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> KAUTO </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> CDROP </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> KBARO </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SYMFXD </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> StarlingA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Starlingm </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> StarlingS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+
+<normaldist><name> FluidA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Fluidm </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> FluidS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+
+<normaldist><name> UrineA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Urinem </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> UrineB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+
+<normaldist><name> AutoA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Autom </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AutoB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+
+<normaldist><name> AffNaA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AffNam </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AffNaS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+
+<normaldist><name> SympsA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Sympsm </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SympsS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SympsB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+
+<normaldist><name> RVRA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> RVRB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+
+
+</variables>
+
+<definitions>
+<block><name> Randomize </name>
+
+<def><name> CardiacOutput.SlopeB </name><val> CardiacOutput.SlopeB * SlopeB </val></def>
+<def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
+<def><name> CardiacOutput.HSBasic </name><val> CardiacOutput.HSBasic * HSBasic </val></def>
+<def><name> CardiacOutput.StarlingA </name><val> CardiacOutput.StarlingA  * StarlingA </val></def>
+<def><name> CardiacOutput.Starlingm </name><val> CardiacOutput.Starlingm * Starlingm </val></def>
+<def><name> CardiacOutput.StarlingS </name><val> CardiacOutput.StarlingS * StarlingS </val></def>
+<def><name> CardiacOutput.RVRa </name><val> CardiacOutput.RVRa * RVRA </val></def>
+<def><name> CardiacOutput.RVRb </name><val> CardiacOutput.RVRb * RVRB </val></def>
+
+
+<def><name> FluidVolumes.FluidA </name><val> FluidVolumes.FluidA * FluidA </val></def>
+<def><name> FluidVolumes.Fluidm </name><val> FluidVolumes.Fluidm * Fluidm </val></def>
+<def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
+<def><name> FluidVolumes.UrineA </name><val> FluidVolumes.UrineA * UrineA </val></def>
+<def><name> FluidVolumes.UrineB </name><val> FluidVolumes.UrineB * UrineB </val></def>
+<def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
+<def><name> FluidVolumes.RDrop </name><val> FluidVolumes.RDrop * RDrop </val></def>
+<def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+
+<def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
+<def><name> FlowAutoregulation.Autom </name><val> FlowAutoregulation.Autom * Autom </val></def>
+<!--<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>-->
+<def><name> FlowAutoregulation.KAUTO </name><val> FlowAutoregulation.KAUTO * KAUTO </val></def>
+
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
+<def><name> BaroreceptorReflex.AffNam </name><val> BaroreceptorReflex.AffNam * AffNam</val></def>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.AffNaS * AffNaS</val></def>
+
+<def><name> BaroreceptorReflex.SympsA </name><val> BaroreceptorReflex.SympsA * SympsA</val></def>
+<def><name> BaroreceptorReflex.Sympsm </name><val> BaroreceptorReflex.Sympsm * Sympsm</val></def>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * SympsS</val></def>
+<def><name> BaroreceptorReflex.SympsB </name><val> BaroreceptorReflex.SympsB * SympsB</val></def>
+
+<def><name> BaroreceptorReflex.CDROP </name><val> BaroreceptorReflex.CDROP * CDROP </val></def>
+<def><name> BaroreceptorReflex.KBARO </name><val> BaroreceptorReflex.KBARO * KBARO </val></def>
+<def><name> BaroreceptorReflex.SYMFXD </name><val> BaroreceptorReflex.SYMFXD * SYMFXD </val></def>
+
+
+</block>
+</definitions>
+
+</structure>

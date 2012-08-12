@@ -1,0 +1,82 @@
+<?xml version = '1.0' ?>
+
+<model>
+
+<title><basic> Complete Model </basic></title>
+<?path Structure\ ?>
+
+<?include Randomize.DES ?>
+<?include CardiacOutput.DES ?>
+<?include FluidVolumes.DES ?>
+<?include FlowAutoregulation.DES ?>
+<?include BaroreceptorReflex.DES ?>
+
+<structure><name> Model </name>
+
+<definitions> ===================================
+
+<block><name> Dervs </name> =====================
+
+  <call> FluidVolumes.CalcPartition </call>
+  <call> FlowAutoregulation.CalcTPR </call>
+
+  <implicitmath><name> BaroreceptorReflex.SYM </name>
+    <call> CardiacOutput.Dervs </call>
+    <call> FlowAutoregulation.Dervs </call>
+    <call> FluidVolumes.Dervs </call>
+    <call> BaroreceptorReflex.Dervs </call>
+  </implicitmath>
+
+</block>
+
+<block><name> WrapUp </name>
+<if><test> System.X GT 0 </test>
+<true>
+  <def><name> CardiacOutput.Index </name><val> 1 </val></def>
+</true>
+</if>
+</block>
+
+</definitions>
+</structure>
+
+<math>
+  <dervs> Model.Dervs </dervs>
+  <wrapup> Model.WrapUp </wrapup>
+</math>
+
+<control> =======================================
+
+<scramble/>
+<gofor>
+  <solutionint> 1440 </solutionint>
+  <displayint> 60 </displayint>
+  <menuitem> 1 Day </menuitem>
+</gofor>
+
+<gofor>
+  <solutionint> 10080 </solutionint>
+  <displayint> 60 </displayint>
+  <menuitem> 1 Week </menuitem>
+</gofor>
+
+</control>
+
+<display> =======================================
+<?path Display ?>
+
+<common>
+<addarrows/>
+
+<?include Tree.DES ?>
+
+</common>
+<?include CardiacOutput.DES ?>
+<?include FluidVolumes.DES ?>
+<?include FlowAutoregulation.DES ?>
+<?include BaroreceptorReflex.DES ?>
+
+<?include Graphs.DES ?>
+
+</display>
+</model>

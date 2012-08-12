@@ -1,0 +1,65 @@
+<structure><name> FlowAutoregulation </name>
+	
+<variables> =====================================
+
+<var><name> TPRE </name></var>
+<parm><name> KAUTO </name><val> 0.00048 </val></parm>
+<var><name> TPR </name></var>
+
+<parm><name> AutoA </name><val>0.04533359 </val></parm>
+<parm><name> Autom </name><val> 10.6449 </val></parm>
+<parm><name> AutoS </name><val> 5709.54 </val></parm>
+
+</variables>
+
+<equations> =====================================
+
+<diffeq>
+  <name> TPRB </name>
+  <integralname> TPRB </integralname>
+  <initialval> 0.0182</initialval>
+  <dervname> Change </dervname>
+  <errorlim> 0.002 </errorlim>
+</diffeq>
+
+</equations>
+
+<functions> =====================================
+
+<curve>
+	<name>Autoregulation</name>
+	<point><x> 4200 </x><y> 0.0020 </y><slope> 0 </slope></point>
+	<point><x> 5500 </x><y> 0.0182 </y><slope> 0.00002 </slope></point>
+	<point><x> 7000 </x><y> 0.0400 </y><slope> 0 </slope></point>
+</curve>
+
+</functions>
+
+<definitions> ===================================
+
+<block><name> CalcTPR </name> ===================
+
+<def>
+  <name> TPR </name>
+  <val> TPRB * BaroreceptorReflex.SYM </val>
+</def>
+
+</block>
+
+<block><name> Dervs </name> =====================
+
+<def>
+  <name> TPRE </name>
+  <val> AutoA * ( CardiacOutput.CO  ^ Autom ) / ( ( CardiacOutput.CO  ^ Autom ) + ( AutoS ^ Autom ) ) </val>
+</def>
+
+
+<def>
+  <name> Change </name>
+  <val> KAUTO * ( TPRE - TPRB ) </val>
+</def>
+
+</block>
+
+</definitions>
+</structure>
