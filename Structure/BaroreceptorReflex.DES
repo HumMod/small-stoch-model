@@ -10,14 +10,16 @@
 <parm><name> SYMFXD </name><val> 1.0 </val></parm>
 <parm><name> SCLAMP </name><val> FALSE </val></parm>
 
-<parm><name> AffNaA </name><val> 2.06267 </val></parm>
-<parm><name> AffNam </name><val> 3.78676 </val></parm>
-<parm><name> AffNaS </name><val> 39.2353 </val></parm>
+<parm><name> AffNaA </name><val> 2.067 </val></parm>
+<parm><name> AffNam </name><val> 3.787 </val></parm>
+<parm><name> AffNaS </name><val> 39.235 </val></parm>
 
 <parm><name> SympsA </name><val>1.0041 </val></parm>
 <parm><name> Sympsm </name><val>3.60464 </val></parm>
 <parm><name> SympsS </name><val> 0.534907 </val></parm>
 <parm><name> SympsB </name><val> 0.93333 </val></parm>
+
+<var><name> SYMEnd1 </name></var>
 
 </variables>
 
@@ -77,29 +79,15 @@
   <name> Change </name>
   <val> KBARO * DELP </val>
 </def>
-<!--
-<def>
-  <name> AFFNA </name>
-  <val>  AffNaA * ( ( DELP + 40 ) ^ AffNam ) / ( ( ( DELP + 40 ) ^ AffNam ) + ( AffNaS ^ AffNam ) ) </val>
-</def>
 
-<def>
-  <name> SYMEnd </name>
-  <val>  SympsA * ( AFFNA ^ Sympsm ) / ( ( AFFNA ^ Sympsm ) + ( SympsS ^ Sympsm ) )  + SympsB </val>
-</def>-->
+</block>
 
-<def>
-  <name> AFFNA </name>
-  <val> AffNa [ DELP ] <!----></val>
-</def>
+<block><name> Afferents </name>
+<def><name> AFFNA </name><val>  AffNaA * ( ( DELP + 40 MAX 0 ) ^ AffNam ) / ( ( ( DELP + 40 MAX 0 ) ^ AffNam ) + ( AffNaS ^ AffNam ) ) MAX 0 </val></def>
+</block>
 
-<conditional><name> SYMEnd </name>
-<test> SCLAMP </test>
-<true> SYMFXD </true>
-<false> Symps [ AFFNA ] </false>
-</conditional>
-
-
+<block><name> Sym </name>
+<def><name> SYMEnd </name><val> SympsA * ( SympsS ^ Sympsm ) / ( ( AFFNA ^ Sympsm ) + ( SympsS ^ Sympsm ) )  + SympsB </val></def>
 </block>
 
 </definitions>

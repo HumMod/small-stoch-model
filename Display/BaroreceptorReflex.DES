@@ -105,42 +105,51 @@
   </yaxis>
 </showgraph>
 
-<showcurve>
-  <row> 11.4 </row><col> 32.0 </col>
-  <high> 7 </high><wide> 28 </wide>
-  <leftmargin> 6 </leftmargin>
+<showmap>
+  <row> 11.4 </row><col> 32.0 </col><high> 7 </high><wide> 28 </wide>
+  <leftmargin> 4 </leftmargin>
 
   <xaxis>
     <name> DELP </name>
-    <label> DELP </label>
-    <scale><min> -50 </min><max> 50 </max><inc> 10 </inc></scale>
+    <label> Delta Pressure </label>
+    <scale>
+      <min> -50 </min><max> 50 </max><inc> 10 </inc>
+    </scale>
   </xaxis>
 
   <yaxis>
-    <label> AFFNA </label>
-    <scale><min> 0 </min><max> 2 </max></scale>
+    <name> AFFNA </name>
+    <label> Aff Nerve Activity </label>
+    <scale>
+      <min> 0 </min><max> 2 </max>
+    </scale>
   </yaxis>
 
-  <curvename> AffNa </curvename>
-</showcurve>
+  <blockname> Afferents </blockname>
+</showmap>
 
-<showcurve>
-  <row> 18.8 </row><col> 32.0 </col>
-  <high> 7 </high><wide> 28 </wide>
-  <leftmargin> 6 </leftmargin>
+<showmap>
+  <row> 18.8 </row><col> 32.0 </col><high> 7 </high><wide> 28 </wide>
+  <leftmargin> 4 </leftmargin>
 
   <xaxis>
     <name> AFFNA </name>
-    <label> AFFNA </label>
-    <scale><min> 0 </min><max> 2 </max></scale>
+    <label> Aff Nerve Activity </label>
+    <scale>
+      <min> 0 </min><max> 2 </max>
+    </scale>
   </xaxis>
 
   <yaxis>
-    <label> SYM </label>
-    <scale><min> 0 </min><max> 2 </max></scale>
+    <name> SYMEnd </name>
+    <label> Symps </label>
+    <scale>
+      <min> 0 </min><max> 2 </max>
+    </scale>
   </yaxis>
 
-  <curvename> Symps </curvename>
-</showcurve>
+  <blockname> Sym </blockname>
+</showmap>
+
 
 </panel>

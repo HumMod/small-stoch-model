@@ -114,24 +114,33 @@
   </yaxis>
 </showgraph>
 
-<showcurve>
+
+<showmap>
   <row> 11.4 </row><col> 32.0 </col>
   <high> 7 </high><wide> 28 </wide>
   <leftmargin> 6 </leftmargin>
 
-  <xaxis>
+   <xaxis>
     <name> RPP </name>
     <label> RPP </label>
-    <scale><min> 50 </min><max> 150 </max><inc> 10 </inc></scale>
+    <scale><min> 75 </min><max> 125 </max><inc> 10 </inc></scale>
   </xaxis>
 
+
   <yaxis>
-    <label> UOB </label>
-    <scale><min> 0 </min><max> 5 </max></scale>
+    <name> UOB </name>
+    <label> Basic Urine Out </label>
+    <scale>
+      <min> 0 </min><max> 1 </max>
+    </scale>
   </yaxis>
 
-  <curvename> BasicUrine </curvename>
-</showcurve>
+  <blockname> UO </blockname>
+</showmap>
+
+
+
+
 
 <showcurve>
   <row> 18.8 </row><col> 32.0 </col>
@@ -151,6 +160,28 @@
 
   <curvename> FluidPartition </curvename>
 </showcurve>
+
+
+<showmap>
+  <row> 18.8 </row><col> 32.0 </col>
+  <high> 7 </high><wide> 28 </wide>
+  <leftmargin> 6 </leftmargin>
+
+  <xaxis>
+    <name> ECFV </name>
+    <label> ECFV </label>
+    <scale><min> 0 </min><max> 25000 </max><inc> 1000 </inc></scale>
+  </xaxis>
+
+
+  <yaxis>
+    <name> BV </name>
+    <label> BV </label>
+    <scale><min> 0 </min><max> 25000 </max><inc> 1000 </inc></scale>
+  </yaxis>
+
+  <blockname> CalcPartition </blockname>
+</showmap>
 
 </panel>
 

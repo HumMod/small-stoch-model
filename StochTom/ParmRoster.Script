@@ -1,0 +1,35 @@
+<rosteradd>
+	<var><name> CardiacOutput.V0  </name></var>
+	<var><name> CardiacOutput.SlopeB </name></var>
+	<var><name> CardiacOutput.HSBasic </name></var>
+	<var><name> FluidVolumes.RDrop </name></var>
+	<var><name>  FluidVolumes.Intake </name></var>
+	<var><name>  FlowAutoregulation.KAUTO </name></var>
+	<var><name> BaroreceptorReflex.CDROP  </name></var>
+	<var><name>  BaroreceptorReflex.KBARO </name></var>
+	<var><name> CardiacOutput.StarlingA </name></var>
+	<var><name>  CardiacOutput.Starlingm </name></var>
+	<var><name> CardiacOutput.StarlingS  </name></var>
+	<var><name> FluidVolumes.FluidA </name></var>
+	<var><name> FluidVolumes.Fluidm  </name></var>
+	<var><name> FluidVolumes.FluidS  </name></var>
+	<var><name> FluidVolumes.UrineA </name></var>
+	<var><name> FluidVolumes.Urinem  </name></var>
+	<var><name> FluidVolumes.UrineB  </name></var>
+	<var><name> FlowAutoregulation.AutoA </name></var>
+	<var><name> FlowAutoregulation.Autom </name></var>
+	<var><name> FlowAutoregulation.AutoS </name></var>
+	<var><name> BaroreceptorReflex.AffNaA </name></var>
+	<var><name> BaroreceptorReflex.AffNam  </name></var>
+	<var><name> BaroreceptorReflex.AffNaS  </name></var>
+	<var><name> BaroreceptorReflex.SympsA </name></var>
+	<var><name> BaroreceptorReflex.Sympsm </name></var>
+	<var><name> BaroreceptorReflex.SympsS </name></var>
+	<var><name> BaroreceptorReflex.SympsB </name></var>
+	<var><name> CardiacOutput.RVRa </name></var>
+	<var><name> CardiacOutput.RVRb </name></var>
+
+
+
+
+</rosteradd>

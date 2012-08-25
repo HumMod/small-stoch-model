@@ -11,7 +11,6 @@
 <normaldist><name> KAUTO </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> CDROP </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> KBARO </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> SYMFXD </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> StarlingA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> Starlingm </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> StarlingS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
@@ -29,13 +28,13 @@
 <normaldist><name> AutoB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 
 <normaldist><name> AffNaA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> AffNam </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AffNam </name><mean> 1.0 </mean><stddev> 0.03 </stddev></normaldist>
 <normaldist><name> AffNaS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 
-<normaldist><name> SympsA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> Sympsm </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> SympsS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> SympsB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SympsA </name><mean> 1.0 </mean><stddev> 0.03 </stddev></normaldist>
+<normaldist><name> Sympsm </name><mean> 1.0 </mean><stddev> 0.03 </stddev></normaldist>
+<normaldist><name> SympsS </name><mean> 1.0 </mean><stddev> 0.03 </stddev></normaldist>
+<normaldist><name> SympsB </name><mean> 1.0 </mean><stddev> 0.03 </stddev></normaldist>
 
 <normaldist><name> RVRA </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> RVRB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
@@ -81,7 +80,6 @@
 
 <def><name> BaroreceptorReflex.CDROP </name><val> BaroreceptorReflex.CDROP * CDROP </val></def>
 <def><name> BaroreceptorReflex.KBARO </name><val> BaroreceptorReflex.KBARO * KBARO </val></def>
-<def><name> BaroreceptorReflex.SYMFXD </name><val> BaroreceptorReflex.SYMFXD * SYMFXD </val></def>
 
 
 </block>

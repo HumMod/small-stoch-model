@@ -48,11 +48,18 @@
 
 <block><name> Dervs </name> =====================
 
+
 <def>
   <name> TPRE </name>
   <val> AutoA * ( CardiacOutput.CO  ^ Autom ) / ( ( CardiacOutput.CO  ^ Autom ) + ( AutoS ^ Autom ) ) </val>
 </def>
 
+<!--
+<def>
+  <name> TPRE </name>
+  <val> Autoregulation [ CardiacOutput.CO ] </val>
+</def>
+-->
 
 <def>
   <name> Change </name>

@@ -1,0 +1,21 @@
+<reset/>
+<restart/>
+
+<actionbutton><block> Randomize.Randomize </block></actionbutton>
+<!--
+<dumppoint>
+  <filename> Test.txt </filename>
+<append/>
+</dumppoint>
+-->
+<gofor>
+	<solutionint> 28800.0 </solutionint>
+	<displayint> 1440 </displayint>
+</gofor>
+
+<dumppoint>
+  <filename> Test.txt </filename>
+<append/>
+</dumppoint>
+
+

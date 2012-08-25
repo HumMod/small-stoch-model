@@ -52,11 +52,18 @@
 <definitions> ===================================
 
 <block><name> CalcPartition </name> =============
-
+<!--
 <def>
   <name> BV </name>
   <val> FluidA * ( ECFV ^ Fluidm ) / ( ( ECFV ^ Fluidm ) + ( FluidS ^ Fluidm ) ) </val>
 </def>
+-->
+
+<def>
+  <name> BV </name>
+  <val> FluidPartition [ ECFV ] </val>
+</def>
+
 
 </block>
 
@@ -72,8 +79,11 @@
   <val> AP - RDrop </val>
 </def>
 
-<def><name> UOB </name><val> UrineB + ( UrineA * ( 2.7128 ^ ( Urinem * ( RPP - 80 ) ) ) ) </val></def>
 
+</block>
+
+<block><name> UO </name>
+<def><name> UOB </name><val> UrineB + ( UrineA * ( 2.7128 ^ ( Urinem * ( RPP - 80 ) ) ) ) </val></def>
 
 <def>
   <name> UO </name>

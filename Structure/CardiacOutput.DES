@@ -75,14 +75,17 @@
 
 <implicitmath><name> RAP </name>
 
-<!--<def><name> CO </name><val> HS * StarlingA * ( ( RAP + 4 ) ^ Starlingm ) / ( ( ( RAP + 4 ) ^ Starlingm ) + ( StarlingS ^ Starlingm ) )  </val></def>-->
-<def><name> CO </name><val> HS * Starling [ RAP ] </val></def>
-
+<call> CardiacOutput.TestCO </call>
 <def><name> RAPEnd </name><val> MCFP - ( CO * RVR ) </val></def>
 
 </implicitmath>
 </block>
 
+<block><name> TestCO </name>
+<def><name> CO </name><val> HS * StarlingA * ( ( RAP + 4 MAX 0 ) ^ Starlingm ) / ( ( ( RAP + 4 MAX 0 ) ^ Starlingm ) + ( StarlingS ^ Starlingm ) )  MAX 0 </val></def>
+<!--<def><name> CO </name><val> Starling [ RAP ] </val></def>-->
+
+</block>
 </definitions>
 </structure>
 

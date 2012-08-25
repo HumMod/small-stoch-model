@@ -78,7 +78,8 @@
   </yaxis>
 </showgraph>
 
-<showcurve>
+
+<showmap>
   <row> 11.4 </row><col> 32.0 </col>
   <high> 7 </high><wide> 28 </wide>
   <leftmargin> 6 </leftmargin>
@@ -86,15 +87,17 @@
   <xaxis>
     <name> CardiacOutput.CO </name>
     <label> CO </label>
-    <scale><min> 0 </min><max> 10000 </max><inc> 1000 </inc></scale>
+    <scale><min> 3000 </min><max> 8000 </max><inc> 1000 </inc></scale>
   </xaxis>
 
   <yaxis>
-    <label> TPRE </label>
+    <name> TPRE </name>
+    <label> Effective TPR </label>
     <scale><min> 0 </min><max> 0.04 </max></scale>
   </yaxis>
 
-  <curvename> Autoregulation </curvename>
-</showcurve>
+  <blockname> Dervs </blockname>
+</showmap>
+
 
 </panel>
