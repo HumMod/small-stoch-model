@@ -1,0 +1,35 @@
+<rosteradd>
+	<var><name> Randomize.V0  </name> <format> 3 </format> </var>
+	<var><name> Randomize.SlopeB </name><format> 3 </format> </var>
+	<var><name> Randomize.HSBasic </name><format> 3 </format> </var>
+	<var><name> Randomize.RDrop </name><format> 3 </format> </var>
+	<var><name>  Randomize.Intake </name><format> 3 </format> </var>
+	<var><name>  Randomize.KAUTO </name><format> 3 </format> </var>
+	<var><name> Randomize.CDROP  </name><format> 3 </format> </var>
+	<var><name>  Randomize.KBARO </name><format> 3 </format> </var>
+	<var><name> Randomize.StarlingA </name><format> 3 </format> </var>
+	<var><name>  Randomize.Starlingm </name><format> 3 </format> </var>
+	<var><name> Randomize.StarlingS  </name><format> 3 </format> </var>
+	<var><name> Randomize.FluidA </name><format> 3 </format> </var>
+	<var><name> Randomize.Fluidm  </name><format> 3 </format> </var>
+	<var><name> Randomize.FluidS  </name><format> 3 </format> </var>
+	<var><name> Randomize.UrineA </name><format> 3 </format> </var>
+	<var><name> Randomize.Urinem  </name><format> 3 </format> </var>
+	<var><name> Randomize.UrineB  </name><format> 3 </format> </var>
+	<var><name> Randomize.AutoA </name><format> 3 </format> </var>
+	<var><name> Randomize.Autom </name><format> 3 </format> </var>
+	<var><name> Randomize.AutoS </name><format> 3 </format> </var>
+	<var><name> Randomize.AffNaA </name><format> 3 </format> </var>
+	<var><name> Randomize.AffNam  </name><format> 3 </format> </var>
+	<var><name> Randomize.AffNaS  </name><format> 3 </format> </var>
+	<var><name> Randomize.SympsA </name><format> 3 </format> </var>
+	<var><name> Randomize.Sympsm </name><format> 3 </format> </var>
+	<var><name> Randomize.SympsS </name><format> 3 </format> </var>
+	<var><name> Randomize.SympsB </name><format> 3 </format> </var>
+	<var><name> Randomize.RVRA </name><format> 3 </format> </var>
+	<var><name> Randomize.RVRB </name><format> 3 </format> </var>
+
+
+
+
+</rosteradd>

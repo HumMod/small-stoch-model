@@ -16,6 +16,7 @@
 
 <?include VarRoster.Script ?>
 <?include ParmRoster.Script ?>
+<?include RandRoster.Script ?>
 
 
 <dumproster>
