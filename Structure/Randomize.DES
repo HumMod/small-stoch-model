@@ -3,42 +3,43 @@
 
 <variables>
 
-<normaldist><name> V0 </name><mean> 0.93 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> SlopeB </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> HSBasic </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> RDrop </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> Intake </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> KAUTO </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> CDROP </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> KBARO </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> StarlingA </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> Starlingm </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> StarlingS </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> V0 </name><mean> 1 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SlopeB </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> HSBasic </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> RDrop </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Intake </name><mean> 1.25 </mean><stddev> 0.2 </stddev></normaldist>
+<normaldist><name> KAUTO </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> CDROP </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> KBARO </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 
-<normaldist><name> FluidA </name><mean>.93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> Fluidm </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> FluidS </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> StarlingA </name><mean> 1.0  </mean><stddev> 0.2 </stddev></normaldist>
+<normaldist><name> Starlingm </name><mean> 1.0 </mean><stddev> 0.2 </stddev></normaldist>
+<normaldist><name> StarlingS </name><mean> 1.0  </mean><stddev> 0.2 </stddev></normaldist>
 
-<normaldist><name> UrineA </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> Urinem </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> UrineB </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> FluidA </name><mean>1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Fluidm </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> FluidS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 
-<normaldist><name> AutoA </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> Autom </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> AutoB </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> AutoS </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> UrineA </name><mean> 1.0  </mean><stddev> 0.3 </stddev></normaldist>
+<normaldist><name> Urinem </name><mean> 1.0  </mean><stddev> 0.3 </stddev></normaldist>
+<normaldist><name> UrineB </name><mean> 1.0  </mean><stddev> 0.3 </stddev></normaldist>
 
-<normaldist><name> AffNaA </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> AffNam </name><mean> .93 </mean><stddev> 0.03 </stddev></normaldist>
-<normaldist><name> AffNaS </name><mean> .93 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AutoA </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Autom </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AutoB </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AutoS </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
 
-<normaldist><name> SympsA </name><mean> .93  </mean><stddev> 0.03 </stddev></normaldist>
-<normaldist><name> Sympsm </name><mean> .93  </mean><stddev> 0.03 </stddev></normaldist>
-<normaldist><name> SympsS </name><mean> .93  </mean><stddev> 0.03 </stddev></normaldist>
-<normaldist><name> SympsB </name><mean> .93  </mean><stddev> 0.03 </stddev></normaldist>
+<normaldist><name> AffNaA </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AffNam </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> AffNaS </name><mean> 1.0 </mean><stddev> 0.1 </stddev></normaldist>
 
-<normaldist><name> RVRA </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> RVRB </name><mean> .93  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SympsA </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> Sympsm </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SympsS </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+<normaldist><name> SympsB </name><mean> 1.0  </mean><stddev> 0.1 </stddev></normaldist>
+
+<normaldist><name> RVRA </name><mean> 1.0  </mean><stddev> 0.2 </stddev></normaldist>
+<normaldist><name> RVRB </name><mean> 1.0  </mean><stddev> 0.2 </stddev></normaldist>
 
 
 </variables>
