@@ -19,44 +19,63 @@
 <?include RandRoster.Script ?>
 
 
-<dumproster>
-  <filename> Test.txt</filename>
-</dumproster>
 
 <continueonerror/>
 
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
 
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
 
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
-<?include Normal.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
+<?include General.Script ?>
 
 
 

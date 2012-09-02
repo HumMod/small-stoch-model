@@ -17,6 +17,7 @@
 <parm><name> FluidA </name><val> 7773.28 </val></parm>
 <parm><name> Fluidm </name><val> 3.63924 </val></parm>
 <parm><name> FluidS </name><val> 12041.9 </val></parm>
+<parm><name> Loss </name><val> 0 </val></parm>
 
 </variables>
 
@@ -52,18 +53,11 @@
 <definitions> ===================================
 
 <block><name> CalcPartition </name> =============
-<!--
+
 <def>
   <name> BV </name>
   <val> FluidA * ( ECFV ^ Fluidm ) / ( ( ECFV ^ Fluidm ) + ( FluidS ^ Fluidm ) ) </val>
 </def>
--->
-
-<def>
-  <name> BV </name>
-  <val> FluidPartition [ ECFV ] </val>
-</def>
-
 
 </block>
 
@@ -92,7 +86,7 @@
 
 <def>
   <name> Change </name>
-  <val> Intake - UO </val>
+  <val> Intake - UO - Loss </val>
 </def>
 
 </block>

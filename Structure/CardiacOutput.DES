@@ -14,7 +14,7 @@
 <parm><name> HSBasic </name><val> 1.0 </val></parm>
 <var><name> HS </name></var>
 
-<parm><name> StarlingA </name><val> 13370 </val></parm>
+<parm><name> StarlingA </name><val> 17760 </val></parm>13370=fit
 <parm><name> Starlingm </name><val> 1.91663 </val></parm>
 <parm><name> StarlingS </name><val> 5.30963 </val></parm>
 

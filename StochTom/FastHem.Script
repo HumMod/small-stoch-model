@@ -1,0 +1,31 @@
+<reset/>
+<restart/>
+
+<actionbutton><block> Randomize.Randomize </block></actionbutton>
+<!--
+<dumppoint>
+  <filename> Test.txt </filename>
+<append/>
+</dumppoint>
+-->
+<gofor>
+	<solutionint> 28800.0 </solutionint>
+	<displayint> 1440 </displayint>
+</gofor>
+
+<setvalue>
+  <var> FluidVolumes.Loss </var>
+  <val> 70 </val>
+</setvalue>
+
+<gofor>
+	<solutionint> 20.0 </solutionint>
+	<displayint> 5.0 </displayint>
+</gofor>
+
+<dumpsegment>
+  <filename> TestFH.txt </filename>
+<append/>
+<start> 28800 </start>
+<stop> 28820 </stop>
+</dumpsegment>
