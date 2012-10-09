@@ -1,0 +1,21 @@
+Roster
+
+  System.X
+  CardiacOutput.CO
+  CardiacOutput.RAP
+  CardiacOutput.MCFP
+  CardiacOutput.Slope
+  FluidVolumes.AP
+  FluidVolumes.BV
+  FluidVolumes.ECFV
+  FluidVolumes.RPP
+  FluidVolumes.UO
+  FlowAutoregulation.TPR
+  BaroreceptorReflex.AFFNA
+  BaroreceptorReflex.SYMEnd
+  BaroreceptorReflex.SympsA
+10100.00,2005.550,-3.134,1.653,0.009720,83.2,3670.0,10708.5,83.233,0.077,0.042,0.246,2.115,1.254,
+10100.00,1768.683,-3.202,0.947,0.009831,71.3,3596.3,10596.9,71.275,0.000,0.040,0.011,2.156,1.223,
+10100.00,1718.241,-3.237,0.721,0.010102,67.3,3571.3,10559.4,67.272,0.000,0.039,0.001,2.266,1.333,
+10100.00,1779.254,-3.194,0.948,0.009758,70.8,3597.2,10598.3,70.818,0.000,0.040,0.009,2.126,1.193,
+10100.00,1738.718,-3.226,1.011,0.010028,74.5,3600.9,10603.8,74.463,0.000,0.043,0.030,2.236,1.303,

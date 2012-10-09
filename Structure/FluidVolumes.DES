@@ -9,14 +9,13 @@
 <var><name> UOB </name></var>
 <var><name> UO </name></var>
 <var><name> BV </name></var>
-<parm><name> Intake </name><val> 1.0 </val></parm>
-<parm><name> UrineA </name><val> .179946 </val></parm>
-<parm><name> UrineB </name><val> -0.216793 </val></parm>
-<parm><name> Urinem </name><val> .0966118 </val></parm>
+<parm><name> Intake </name><val> 1. </val></parm>
 
-<parm><name> FluidA </name><val> 7773.28 </val></parm>
-<parm><name> Fluidm </name><val> 3.63924 </val></parm>
-<parm><name> FluidS </name><val> 12041.9 </val></parm>
+<parm><name> Urinem </name><val> .05 </val></parm>0.1
+
+<parm><name> FluidA </name><val> 7773.28 </val></parm>7773.28
+<parm><name> Fluidm </name><val> 3.63924 </val></parm>3.63924;3.73924
+<parm><name> FluidS </name><val> 11041.9 </val></parm>12042
 <parm><name> Loss </name><val> 0 </val></parm>
 
 </variables>
@@ -54,6 +53,8 @@
 
 <block><name> CalcPartition </name> =============
 
+<def><name> ECFV </name><val> ECFV MAX 0 </val></def>
+
 <def>
   <name> BV </name>
   <val> FluidA * ( ECFV ^ Fluidm ) / ( ( ECFV ^ Fluidm ) + ( FluidS ^ Fluidm ) ) </val>
@@ -77,11 +78,11 @@
 </block>
 
 <block><name> UO </name>
-<def><name> UOB </name><val> UrineB + ( UrineA * ( 2.7128 ^ ( Urinem * ( RPP - 80 ) ) ) ) </val></def>
+<def><name> UOB </name><val>  Urinem * ( RPP - 80 )  </val></def>
 
 <def>
   <name> UO </name>
-  <val> UOB / BaroreceptorReflex.SYM </val>
+  <val> UOB / BaroreceptorReflex.SYM MAX 0 </val>
 </def>
 
 <def>

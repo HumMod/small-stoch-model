@@ -1,0 +1,17 @@
+<reset/>
+<restart/>
+
+
+<gofor>
+	<solutionint> 2880.0 </solutionint>
+	<displayint> 2880.0 </displayint>
+</gofor>
+
+<dumpsegment>
+  <filename> TestFH.txt </filename>
+<append/>
+<start> 0 </start>
+<stop> 2880 </stop>
+</dumpsegment>
+
+<skiptohereonerror/>

@@ -1,4 +1,5 @@
-<reset/>
+<skiptohereonerror/>
+
 <restart/>
 
 <actionbutton><block> Randomize.Randomize </block></actionbutton>

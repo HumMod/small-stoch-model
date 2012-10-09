@@ -1,5 +1,7 @@
 <rosteradd>
 	<var><name> CardiacOutput.V0  </name><format> 0 </format> </var>
+	<var><name> CardiacOutput.slope_a </name><format> 4 </format> </var>
+	<var><name> CardiacOutput.slope_b </name><format> 4 </format> </var>
 	<var><name> CardiacOutput.SlopeB </name><format> 4 </format> </var>
 	<var><name> CardiacOutput.HSBasic </name><format> 0 </format> </var>
 	<var><name> FluidVolumes.RDrop </name><format> 1 </format> </var>
@@ -13,9 +15,7 @@
 	<var><name> FluidVolumes.FluidA </name><format> 3 </format> </var>
 	<var><name> FluidVolumes.Fluidm  </name><format> 3 </format> </var>
 	<var><name> FluidVolumes.FluidS  </name><format> 3 </format> </var>
-	<var><name> FluidVolumes.UrineA </name><format> 3 </format> </var>
 	<var><name> FluidVolumes.Urinem  </name><format> 3 </format> </var>
-	<var><name> FluidVolumes.UrineB  </name><format> 3 </format> </var>
 	<var><name> FlowAutoregulation.AutoA </name><format> 3 </format> </var>
 	<var><name> FlowAutoregulation.Autom </name><format> 3 </format> </var>
 	<var><name> FlowAutoregulation.AutoS </name><format> 3 </format> </var>

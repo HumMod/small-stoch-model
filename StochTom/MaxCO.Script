@@ -1,0 +1,32 @@
+<skiptohereonerror/>
+
+<restart/>
+
+<actionbutton><block> Randomize.Randomize </block></actionbutton>
+
+<gofor>
+	<solutionint> 28800.0 </solutionint>
+	<displayint> 1440 </displayint>
+</gofor>
+
+<setvalue>
+  <var> BaroreceptorReflex.SCLAMP </var>
+  <val> 1 </val>
+</setvalue>
+
+<setvalue>
+  <var> BaroreceptorReflex.SYMFXD </var>
+  <val> 2 </val>
+</setvalue>
+
+<gofor>
+	<solutionint> 20.0 </solutionint>
+	<displayint> 20 </displayint>
+</gofor>
+
+<dumppoint>
+  <filename> Test.txt </filename>
+<append/>
+</dumppoint>
+
+

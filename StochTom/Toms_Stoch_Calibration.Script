@@ -6,6 +6,7 @@
 	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
 </launch>
 
+<skipaheadonerror/>
 <scramble/>
 
 <?include VarRoster.Script ?>
@@ -17,6 +18,62 @@
 </dumproster>
 
 <continueonerror/>
+
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+<?include Normal.Script ?>
+
 
 <?include Normal.Script ?>
 <?include Normal.Script ?>

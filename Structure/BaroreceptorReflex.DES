@@ -16,9 +16,9 @@
 <parm><name> AffNaS </name><val> 39.235 </val></parm>
 
 <parm><name> SympsA </name><val>1.0041 </val></parm>
-<parm><name> Sympsm </name><val>3.60464 </val></parm>
-<parm><name> SympsS </name><val> 0.534907 </val></parm>
-<parm><name> SympsB </name><val> 0.93333 </val></parm>
+<parm><name> Sympsm </name><val>3.605 </val></parm>3.60464
+<parm><name> SympsS </name><val> 0.535 </val></parm>.534907
+<parm><name> SympsB </name><val> 0.933 </val></parm>.93333
 
 <var><name> SYMEnd1 </name></var>
 
@@ -76,6 +76,7 @@
   <val> CP - CPAD </val>
 </def>
 
+
 <def>
   <name> Change </name>
   <val> KBARO * DELP </val>
@@ -85,10 +86,20 @@
 
 <block><name> Afferents </name>
 <def><name> AFFNA </name><val>  AffNaA * ( ( DELP + 40 MAX 0 ) ^ AffNam ) / ( ( ( DELP + 40 MAX 0 ) ^ AffNam ) + ( AffNaS ^ AffNam ) ) MAX 0 </val></def>
+
+<!--<def><name> AFFNA </name><val> AffNa [ DELP ] </val></def>-->
 </block>
 
 <block><name> Sym </name>
+<if><test> SCLAMP</test>
+<true>
+<def><name> SYMEnd </name><val>  SYMFXD </val></def>
+</true>
+<false>
 <def><name> SYMEnd </name><val> SympsA * ( SympsS ^ Sympsm ) / ( ( AFFNA ^ Sympsm ) + ( SympsS ^ Sympsm ) )  + SympsB </val></def>
+</false>
+</if>
+<!--<def><name> SYMEnd </name><val> Symps [ AFFNA ] </val></def>-->
 </block>
 
 </definitions>

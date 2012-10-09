@@ -3,55 +3,77 @@
 
 <variables>
 
-<normaldist><name> V0 </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>SOFT
+<normaldist><name> V0 </name><mean> 1.00 </mean><stddev> 0.05 </stddev></normaldist>SOFT
 <normaldist><name> Slope_a </name><mean> 1.00 </mean><stddev> 0.01 </stddev></normaldist> SOFT
-<normaldist><name> Slope_b </name><mean> 1.00 </mean><stddev> 0.01 </stddev></normaldist> SOFT (.143=HS range from lit)
-<normaldist><name> SlopeB </name><mean> 1.00 </mean><stddev> 0.143 </stddev></normaldist> SOFT
+<normaldist><name> Slope_b </name><mean> 1.00 </mean><stddev> 0.025 </stddev></normaldist> SOFT (.143=HS range from lit)
+<normaldist><name> SlopeB </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist> SOFT
 
-<normaldist><name> HSBasic </name><mean> 1.00 </mean><stddev> 0.25 </stddev></normaldist>SOFT; maybe constant
+<normaldist><name> HSBasic </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>SOFT; maybe constant
 <normaldist><name> RDrop </name><mean> 1.00  </mean><stddev> 0.1 </stddev></normaldist>0
-<normaldist><name> Intake </name><mean> 1.20 </mean><stddev> 0.25 </stddev></normaldist>
-<normaldist><name> KAUTO </name><mean> 1.00  </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> CDROP </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>0
-<normaldist><name> KBARO </name><mean> 1.00 </mean><stddev> 0.15 </stddev></normaldist>
+<normaldist><name> Intake </name><mean> 1.0 </mean><stddev> 0.3 </stddev></normaldist>
+<normaldist><name> KAUTO </name><mean> 1.00  </mean><stddev> 0.05 </stddev></normaldist>
+<normaldist><name> KBARO </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>
 
-<normaldist><name> StarlingA </name><mean> 1.00  </mean><stddev> 0.11 </stddev></normaldist>HARD
-<normaldist><name> Starlingm </name><mean> 1.00 </mean><stddev> 0.25 </stddev></normaldist>SOFT
-<normaldist><name> StarlingS </name><mean> 1.00  </mean><stddev> 0.25 </stddev></normaldist>SOFT
+<normaldist><name> StarlingA </name><mean> 1.00  </mean><stddev> 0.1 </stddev></normaldist>HARD 0.1
+<normaldist><name> Starlingm </name><mean> 1.00 </mean><stddev> 0.05 </stddev></normaldist>SOFT
+<normaldist><name> StarlingS </name><mean> 1.00  </mean><stddev> 0.05 </stddev></normaldist>SOFT
 
-<normaldist><name> FluidA </name><mean> 1.00 </mean><stddev> 0.05 </stddev></normaldist>
-<normaldist><name> Fluidm </name><mean> 1.00  </mean><stddev> 0.05 </stddev></normaldist>
-<normaldist><name> FluidS </name><mean> 1.00 </mean><stddev> 0.05 </stddev></normaldist>
+<normaldist><name> FluidA </name><mean> 1.00 </mean><stddev> 0.02 </stddev></normaldist>
+<normaldist><name> Fluidm </name><mean> 1.00  </mean><stddev> 0.02 </stddev></normaldist>
+<normaldist><name> FluidS </name><mean> 1.00 </mean><stddev> 0.02 </stddev></normaldist>
 
-<normaldist><name> UrineA </name><mean> 1.00  </mean><stddev> 0.3 </stddev></normaldist>
-<normaldist><name> Urinem </name><mean> 1.00  </mean><stddev> 0.3 </stddev></normaldist>
-<normaldist><name> UrineB </name><mean> 1.00  </mean><stddev> 0.3 </stddev></normaldist>
+<normaldist><name> Urinem </name><mean> 1.00  </mean><stddev> 0.05 </stddev></normaldist>
 
 <normaldist><name> AutoA </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> Autom </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>
-<normaldist><name> AutoB </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>
 <normaldist><name> AutoS </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>
 
-<normaldist><name> AffNaA </name><mean> 1.00  </mean><stddev> 0.3 </stddev></normaldist>Hard (suggested from Rogers, Paton, Schwaber, Am J Physiol Regulatory 1993)
-<normaldist><name> AffNam </name><mean> 1.00 </mean><stddev> 0.3 </stddev></normaldist>SOFT
-<normaldist><name> AffNaS </name><mean> 1.00 </mean><stddev> 0.3 </stddev></normaldist>SOFT
+<normaldist><name> AffNaA </name><mean> 1.00  </mean><stddev> 0.1 </stddev></normaldist>Hard (suggested from Rogers, Paton, Schwaber, Am J Physiol Regulatory 1993) 0.1
+<parm><name> ModAffNaA </name><val> 0 </val></parm>
+<normaldist><name> AffNam </name><mean> 1.00 </mean><stddev> 0.1 </stddev></normaldist>SOFT
+<normaldist><name> AffNaS </name><mean> 1.00 </mean><stddev> 0.15 </stddev></normaldist>SOFT
+<parm><name> ModAffNaS </name><val> 0 </val></parm>
 
-<normaldist><name> SympsA </name><mean> 1.00  </mean><stddev> 0.02 </stddev></normaldist>HARD
-<normaldist><name> Sympsm </name><mean> 1.00  </mean><stddev> 0.1 </stddev></normaldist>SOFT
-<normaldist><name> SympsS </name><mean> 1.00  </mean><stddev> 0.08 </stddev></normaldist>HARD
-<normaldist><name> SympsB </name><mean> 1.00  </mean><stddev> 0.2 </stddev></normaldist>HARD
+<normaldist><name> SympsA </name><mean> 1.00  </mean><stddev> 0.05 </stddev></normaldist>HARD .05
+<parm><name> ModSympsA </name><val> 0 </val></parm>
+<normaldist><name> Sympsm </name><mean> 1.00  </mean><stddev> 0.05 </stddev></normaldist>SOFT
+<normaldist><name> SympsS </name><mean> 1.00  </mean><stddev> 0.15 </stddev></normaldist>HARD  .15
+<parm><name> ModSympsS </name><val> 0 </val></parm>
+<normaldist><name> SympsB </name><mean> 1.00  </mean><stddev> 0.25 </stddev></normaldist>HARD .25
 
-<normaldist><name> RVRA </name><mean> 1.00  </mean><stddev> 0.05 </stddev></normaldist>HARD
-<normaldist><name> RVRB </name><mean> 1.00  </mean><stddev> 0.01 </stddev></normaldist>HARD
-
+<normaldist><name> RVRA </name><mean> 1.00  </mean><stddev> 0.075 </stddev></normaldist>HARD .075
+<normaldist><name> RVRB </name><mean> 1.00  </mean><stddev> 0.01 </stddev></normaldist>HARD .01`
 
 </variables>
 
 <definitions>
+<block><name> RandomizeAuto </name>
+<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
+
+</block>
+
+<block><name> SympsA </name>
+<def><name> BaroreceptorReflex.SympsA </name><val> BaroreceptorReflex.SympsA * ( SympsA + ModSympsA ) </val></def>
+</block>
+
+<block><name> SympsS </name>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * ( SympsS + ModSympsS ) </val></def>
+</block>
+
+<block><name> AffNaA </name>
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.SympsA * ( AffNaA + ModAffNaA ) </val></def>
+</block>
+
+<block><name> AffNaS </name>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.SympsS * ( AffNaS + ModAffNaS ) </val></def>
+</block>
+
+
+
 <block><name> Randomize </name>
 
-<def><name> CardiacOutput.Slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
-<def><name> CardiacOutput.Slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
+<def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
+<def><name> CardiacOutput.slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
 <def><name> CardiacOutput.SlopeB </name><val> CardiacOutput.SlopeB * SlopeB </val></def>
 <def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
 <def><name> CardiacOutput.HSBasic </name><val> CardiacOutput.HSBasic * HSBasic </val></def>
@@ -65,16 +87,17 @@
 <def><name> FluidVolumes.FluidA </name><val> FluidVolumes.FluidA * FluidA </val></def>
 <def><name> FluidVolumes.Fluidm </name><val> FluidVolumes.Fluidm * Fluidm </val></def>
 <def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
-<def><name> FluidVolumes.UrineA </name><val> FluidVolumes.UrineA * UrineA </val></def>
-<def><name> FluidVolumes.UrineB </name><val> FluidVolumes.UrineB * UrineB </val></def>
 <def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
 <def><name> FluidVolumes.RDrop </name><val> FluidVolumes.RDrop * RDrop </val></def>
 <def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+
+
 
 <def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
 <def><name> FlowAutoregulation.Autom </name><val> FlowAutoregulation.Autom * Autom </val></def>
 <def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
 <def><name> FlowAutoregulation.KAUTO </name><val> FlowAutoregulation.KAUTO * KAUTO </val></def>
+
 
 <def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
 <def><name> BaroreceptorReflex.AffNam </name><val> BaroreceptorReflex.AffNam * AffNam</val></def>

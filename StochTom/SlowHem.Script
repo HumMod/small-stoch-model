@@ -1,16 +1,17 @@
-<reset/>
+<skiptohereonerror/>
+
 <restart/>
 
 <actionbutton><block> Randomize.Randomize </block></actionbutton>
-<!--
+
 <dumppoint>
-  <filename> Test.txt </filename>
+  <filename> TestFH.txt </filename>
 <append/>
 </dumppoint>
--->
+
 <gofor>
 	<solutionint> 28800.0 </solutionint>
-	<displayint> 1440 </displayint>
+	<displayint> 28800.0 </displayint>
 </gofor>
 
 <setvalue>
@@ -27,5 +28,8 @@
   <filename> TestSH.txt </filename>
 <append/>
 <start> 28800 </start>
-<stop> 28870 </stop>
+<stop> 28860 </stop>
 </dumpsegment>
+
+
+

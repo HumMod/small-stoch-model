@@ -1,0 +1,32 @@
+<script>
+
+
+<launch>
+	<solver> C:\Documents and Settings\Hester_lab\Desktop\Hummod_Constellation\solver\Code\Model Solver.EXE </solver>
+	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
+</launch>
+
+<skipaheadonerror/>
+<scramble/>
+
+<?include VarRoster.Script ?>
+<?include Jian_SympsA_Roster.Script ?>
+
+<dumproster>
+  <filename> SympsA_High.txt</filename>
+</dumproster>
+
+<continueonerror/>
+
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+<?include Jian_SympsA_High_Protocol.Script ?>
+
+</script>

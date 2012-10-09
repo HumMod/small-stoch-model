@@ -1,0 +1,33 @@
+<script>
+
+
+<launch>
+	<solver> C:\Documents and Settings\Hester_lab\Desktop\Hummod_Constellation\solver\Code\Model Solver.EXE </solver>
+	<model> C:\Documents and Settings\Hester_lab\Desktop\Minis\minis\models\Normal.DES </model>
+</launch>
+
+<rosteradd>
+ <var><name> Model.epsilon </name><format> 4 </format></var>
+ <var><name> Model.delta </name><format> 4 </format></var>
+</rosteradd>
+
+<reset/>
+<restart/>
+
+<scramble/>
+
+<gofor>
+	<solutionint> 1000.0 </solutionint>
+	<displayint> 1 </displayint>
+</gofor>
+
+<dumpsegment>
+  <filename> NormalTest.txt </filename>
+  <start> 0 </start>
+  <stop>1000</stop>
+</dumpsegment>
+
+</script>
+
+
+

@@ -1,0 +1,26 @@
+<skiptohereonerror/>
+
+<restart/>
+
+<actionbutton><block> Randomize.AffNaS </block></actionbutton>
+
+<gofor>
+	<solutionint> 10080.0 </solutionint>
+	<displayint> 10080.0 </displayint>
+</gofor>
+
+<setvalue>
+  <var> FluidVolumes.Loss </var>
+  <val> 70 </val>
+</setvalue>
+
+<gofor>
+	<solutionint> 20.0 </solutionint>
+	<displayint> 5.0 </displayint>
+</gofor>
+
+<dumppoint>
+  <filename> AffNaS.txt </filename>
+<append/>
+</dumppoint>
+

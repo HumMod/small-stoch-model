@@ -1,0 +1,16 @@
+Roster
+
+  System.X
+  CardiacOutput.CO
+  CardiacOutput.RAP
+  CardiacOutput.MCFP
+  CardiacOutput.Slope
+  FluidVolumes.AP
+  FluidVolumes.BV
+  FluidVolumes.ECFV
+  FluidVolumes.RPP
+  FluidVolumes.UO
+  FlowAutoregulation.TPR
+  BaroreceptorReflex.AFFNA
+  BaroreceptorReflex.SYMEnd
+  BaroreceptorReflex.AffNaS

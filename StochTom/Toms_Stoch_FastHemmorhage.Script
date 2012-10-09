@@ -6,18 +6,12 @@
 	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
 </launch>
 
-<reset/>
-<restart/>
-
-
+<skipaheadonerror/>
 <scramble/>
-
-
 
 <?include VarRoster.Script ?>
 <?include ParmRoster.Script ?>
 <?include RandRoster.Script ?>
-
 
 <dumproster>
   <filename> TestFH.txt</filename>
@@ -81,7 +75,6 @@
 <?include FastHem.Script ?>
 
 
-
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
@@ -138,7 +131,6 @@
 <?include FastHem.Script ?>
 
 
-
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
@@ -193,64 +185,6 @@
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
-
-
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
 
 
 <?include FastHem.Script ?>
@@ -364,178 +298,6 @@
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
 <?include FastHem.Script ?>
-
-
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-<?include FastHem.Script ?>
-
 
 
 <?include FastHem.Script ?>

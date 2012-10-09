@@ -5,11 +5,11 @@
 <title><basic> Complete Model </basic></title>
 <?path Structure\ ?>
 
-<?include Randomize.DES ?>
 <?include CardiacOutput.DES ?>
 <?include FluidVolumes.DES ?>
 <?include FlowAutoregulation.DES ?>
 <?include BaroreceptorReflex.DES ?>
+<?include Randomize.DES ?>
 
 <structure><name> Model </name>
 
@@ -33,20 +33,12 @@
 
 </block>
 
-<block><name> WrapUp </name>
-<if><test> System.X GT 0 </test>
-<true>
-  <def><name> CardiacOutput.Index </name><val> 1 </val></def>
-</true>
-</if>
-</block>
 
 </definitions>
 </structure>
 
 <math>
   <dervs> Model.Dervs </dervs>
-  <wrapup> Model.WrapUp </wrapup>
 </math>
 
 <control> =======================================

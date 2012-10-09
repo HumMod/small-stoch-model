@@ -6,18 +6,12 @@
 	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
 </launch>
 
-<reset/>
-<restart/>
-
-
+<skipaheadonerror/>
 <scramble/>
-
-
 
 <?include VarRoster.Script ?>
 <?include ParmRoster.Script ?>
 <?include RandRoster.Script ?>
-
 
 <dumproster>
   <filename> TestSH.txt</filename>
@@ -25,7 +19,6 @@
 
 <continueonerror/>
 
-
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
@@ -80,63 +73,6 @@
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
-
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
 
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
@@ -249,7 +185,6 @@
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
 
-
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
@@ -361,7 +296,6 @@
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
 
-
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
@@ -416,176 +350,6 @@
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
 <?include SlowHem.Script ?>
-
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-<?include SlowHem.Script ?>
-
-
 
 
 </script>

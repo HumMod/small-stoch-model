@@ -5,6 +5,7 @@
 	<var><name>  CardiacOutput.CO </name><format> 3 </format></var>
 	<var><name> CardiacOutput.RAP </name><format> 3 </format></var>
 	<var><name> CardiacOutput.MCFP </name><format> 3 </format></var>
+	<var><name> CardiacOutput.Slope </name><format> 6 </format></var>
 
 	<var><name> FluidVolumes.AP </name><format> 1 </format></var>
 	<var><name> FluidVolumes.BV </name><format> 1 </format></var>

@@ -1,0 +1,22 @@
+
+<roster>
+	<var><name> System.X </name><format> 2 </format></var>
+
+	<var><name>  CardiacOutput.CO </name><format> 3 </format></var>
+	<var><name> CardiacOutput.RAP </name><format> 3 </format></var>
+	<var><name> CardiacOutput.MCFP </name><format> 3 </format></var>
+	<var><name> CardiacOutput.Slope </name><format> 6 </format></var>
+
+	<var><name> FluidVolumes.AP </name><format> 1 </format></var>
+	<var><name> FluidVolumes.BV </name><format> 1 </format></var>
+	<var><name> FluidVolumes.ECFV </name><format> 1 </format></var>
+	<var><name> FluidVolumes.RPP </name><format> 3 </format></var>
+	<var><name> FluidVolumes.UO </name><format> 3 </format></var>
+
+	<var><name> FlowAutoregulation.TPR </name><format> 3 </format></var>
+
+	<var><name> BaroreceptorReflex.AFFNA </name><format> 3 </format></var>
+	<var><name> BaroreceptorReflex.SYMEnd </name><format> 3 </format></var>
+
+</roster>
+

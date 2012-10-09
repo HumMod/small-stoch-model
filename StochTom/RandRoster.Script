@@ -13,9 +13,7 @@
 	<var><name> Randomize.FluidA </name><format> 3 </format> </var>
 	<var><name> Randomize.Fluidm  </name><format> 3 </format> </var>
 	<var><name> Randomize.FluidS  </name><format> 3 </format> </var>
-	<var><name> Randomize.UrineA </name><format> 3 </format> </var>
 	<var><name> Randomize.Urinem  </name><format> 3 </format> </var>
-	<var><name> Randomize.UrineB  </name><format> 3 </format> </var>
 	<var><name> Randomize.AutoA </name><format> 3 </format> </var>
 	<var><name> Randomize.Autom </name><format> 3 </format> </var>
 	<var><name> Randomize.AutoS </name><format> 3 </format> </var>
