@@ -1,8 +1,9 @@
 <skiptohereonerror/>
 
+<reset/>
 <restart/>
 
-<actionbutton><block> Randomize.Randomize </block></actionbutton>
+<actionbutton><block> Randomize.Everything </block></actionbutton>
 
 <dumppoint>
   <filename> TestFH.txt </filename>
@@ -11,7 +12,7 @@
 
 <gofor>
 	<solutionint> 28800.0 </solutionint>
-	<displayint> 14400.0 </displayint>
+	<displayint> 1440.0 </displayint>
 </gofor>
 
 <setvalue>

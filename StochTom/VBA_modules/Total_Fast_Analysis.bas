@@ -1,4 +1,4 @@
-Attribute VB_Name = "Module1"
+Attribute VB_Name = "Module11"
 Sub AnalysisPackage()
 
 
@@ -7,11 +7,11 @@ Sub AnalysisPackage()
 Open_fast
 MAP_Sheet
 SetHisto
+ComputeDeltaMAP
 
 End Sub
 
 Sub Open_fast()
-Attribute Open_fast.VB_ProcData.VB_Invoke_Func = " \n14"
 '
 ' Open_fast Macro
 '
@@ -117,16 +117,16 @@ Do While Range("A3") <> ""
         If MAP > 100 Then MAP = 100
         If MAP < 1 Then MAP = 1
         Bins(MAP) = Bins(MAP) + 1
-        Separate_Fast (Counter)
+        Separate_fast (Counter)
         Counter = Counter + 1
     End If
 Loop
 
 'MeansAndDevs28800 (Counter)
-'MeansAndDevs28805 (Counter)
-'MeansAndDevs28810 (Counter)
 'MeansAndDevs28815 (Counter)
-'MeansAndDevs28820 (Counter)
+'MeansAndDevs28830 (Counter)
+'MeansAndDevs28845 (Counter)
+'MeansAndDevs28860 (Counter)
 
 
 Sheets("MAPEnd").Select
@@ -142,9 +142,9 @@ TheRange.Value = Bins
 
 End Sub
 
-Sub Separate_Fast(cntr)
+Sub Separate_fast(cntr)
 '
-' Separate_Fast Macro
+' Separate_Slow Macro
 '
   
  'PasteToNew
@@ -297,3 +297,107 @@ Sub MeansAndDevs28820(cntr)
     ActiveSheet.Paste
 
 End Sub
+
+
+
+Sub ComputeDeltaMAP()
+'
+' Macro1 Macro
+'
+
+'
+    Sheets("28820").Select
+    ActiveWindow.ScrollColumn = 2
+    ActiveWindow.ScrollColumn = 3
+    ActiveWindow.ScrollColumn = 4
+    ActiveWindow.ScrollColumn = 5
+    ActiveWindow.ScrollColumn = 6
+    ActiveWindow.ScrollColumn = 7
+    ActiveWindow.ScrollColumn = 8
+    ActiveWindow.ScrollColumn = 9
+    ActiveWindow.ScrollColumn = 10
+    ActiveWindow.ScrollColumn = 11
+    ActiveWindow.ScrollColumn = 12
+    ActiveWindow.ScrollColumn = 13
+    ActiveWindow.ScrollColumn = 14
+    ActiveWindow.ScrollColumn = 15
+    ActiveWindow.ScrollColumn = 16
+    ActiveWindow.ScrollColumn = 17
+    ActiveWindow.ScrollColumn = 18
+    ActiveWindow.ScrollColumn = 19
+    ActiveWindow.ScrollColumn = 20
+    ActiveWindow.ScrollColumn = 21
+    ActiveWindow.ScrollColumn = 22
+    ActiveWindow.ScrollColumn = 23
+    ActiveWindow.ScrollColumn = 24
+    ActiveWindow.ScrollColumn = 25
+    ActiveWindow.ScrollColumn = 26
+    ActiveWindow.ScrollRow = 60
+    ActiveWindow.ScrollRow = 59
+    ActiveWindow.ScrollRow = 58
+    ActiveWindow.ScrollRow = 57
+    ActiveWindow.ScrollRow = 56
+    ActiveWindow.ScrollRow = 55
+    ActiveWindow.ScrollRow = 54
+    ActiveWindow.ScrollRow = 53
+    ActiveWindow.ScrollRow = 52
+    ActiveWindow.ScrollRow = 51
+    ActiveWindow.ScrollRow = 50
+    ActiveWindow.ScrollRow = 49
+    ActiveWindow.ScrollRow = 48
+    ActiveWindow.ScrollRow = 47
+    ActiveWindow.ScrollRow = 46
+    ActiveWindow.ScrollRow = 45
+    ActiveWindow.ScrollRow = 44
+    ActiveWindow.ScrollRow = 43
+    ActiveWindow.ScrollRow = 42
+    ActiveWindow.ScrollRow = 41
+    ActiveWindow.ScrollRow = 40
+    ActiveWindow.ScrollRow = 39
+    ActiveWindow.ScrollRow = 38
+    ActiveWindow.ScrollRow = 37
+    ActiveWindow.ScrollRow = 36
+    ActiveWindow.ScrollRow = 35
+    ActiveWindow.ScrollRow = 34
+    ActiveWindow.ScrollRow = 33
+    ActiveWindow.ScrollRow = 32
+    ActiveWindow.ScrollRow = 31
+    ActiveWindow.ScrollRow = 29
+    ActiveWindow.ScrollRow = 28
+    ActiveWindow.ScrollRow = 27
+    ActiveWindow.ScrollRow = 26
+    ActiveWindow.ScrollRow = 25
+    ActiveWindow.ScrollRow = 24
+    ActiveWindow.ScrollRow = 23
+    ActiveWindow.ScrollRow = 22
+    ActiveWindow.ScrollRow = 21
+    ActiveWindow.ScrollRow = 20
+    ActiveWindow.ScrollRow = 19
+    ActiveWindow.ScrollRow = 18
+    ActiveWindow.ScrollRow = 17
+    ActiveWindow.ScrollRow = 16
+    ActiveWindow.ScrollRow = 15
+    ActiveWindow.ScrollRow = 14
+    ActiveWindow.ScrollRow = 13
+    ActiveWindow.ScrollRow = 12
+    ActiveWindow.ScrollRow = 11
+    ActiveWindow.ScrollRow = 10
+    ActiveWindow.ScrollRow = 9
+    ActiveWindow.ScrollRow = 8
+    ActiveWindow.ScrollRow = 7
+    ActiveWindow.ScrollRow = 6
+    ActiveWindow.ScrollRow = 5
+    ActiveWindow.ScrollRow = 4
+    ActiveWindow.ScrollRow = 3
+    ActiveWindow.ScrollRow = 2
+    ActiveWindow.ScrollRow = 1
+    Range("AQ1").Select
+    ActiveCell.FormulaR1C1 = "='28800'!RC[-37]-'28820'!RC[-37]"
+    Range("AQ1").Select
+    Selection.Copy
+    Range("AQ2:AQ200").Select
+    ActiveSheet.Paste
+    Range("AR1").Select
+    Application.CutCopyMode = False
+End Sub
+

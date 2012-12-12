@@ -5,7 +5,7 @@
 <actionbutton><block> Randomize.Randomize </block></actionbutton>
 
 <dumppoint>
-  <filename> TestFH.txt </filename>
+  <filename> TestSH.txt </filename>
 <append/>
 </dumppoint>
 

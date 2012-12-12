@@ -1,0 +1,28 @@
+<script>
+
+
+<launch>
+	<solver> C:\Documents and Settings\Hester_lab\Desktop\Hummod_Constellation\solver\Code\Model Solver.EXE </solver>
+	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
+</launch>
+
+<reset/>
+<restart/>
+
+<scramble/>
+<skipaheadonerror/>
+
+<?include VarRoster.Script ?>
+<?include ParmRoster.Script ?>
+<?include RandRoster.Script ?>
+
+
+<dumproster>
+  <filename> Test.txt</filename>
+</dumproster>
+
+
+<?include CheckScript.Script ?>
+
+</script>
+

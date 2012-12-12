@@ -70,7 +70,7 @@
 
 
 
-<block><name> Randomize </name>
+<block><name> Everything  </name>
 
 <def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
 <def><name> CardiacOutput.slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
@@ -88,9 +88,7 @@
 <def><name> FluidVolumes.Fluidm </name><val> FluidVolumes.Fluidm * Fluidm </val></def>
 <def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
 <def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
-<def><name> FluidVolumes.RDrop </name><val> FluidVolumes.RDrop * RDrop </val></def>
 <def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
-
 
 
 <def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
@@ -108,7 +106,6 @@
 <def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * SympsS</val></def>
 <def><name> BaroreceptorReflex.SympsB </name><val> BaroreceptorReflex.SympsB * SympsB</val></def>
 
-<def><name> BaroreceptorReflex.CDROP </name><val> BaroreceptorReflex.CDROP * CDROP </val></def>
 <def><name> BaroreceptorReflex.KBARO </name><val> BaroreceptorReflex.KBARO * KBARO </val></def>
 
 
