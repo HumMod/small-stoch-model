@@ -5,22 +5,22 @@
 <var><name> Index </name><val> 0 </val></var>
 
 <var><name> MCFP </name></var>
-<parm><name> V0 </name><val> 3500.0 </val></parm>3500;4425
-<parm><name> slope_a </name><val> 0.35 </val></parm>.28;.35
-<parm><name> slope_b </name><val> 0.65 </val></parm>.72;.65
-<parm><name> SlopeB </name><val> 0.007 </val></parm>.0047;0.01
+<parm><name> V0 </name><val> 3330.0 </val></parm>
+<parm><name> slope_a </name><val> 0.344 </val></parm>
+<parm><name> slope_b </name><val> 0.649 </val></parm>
+<parm><name> SlopeB </name><val> 0.007 </val></parm>
 <var><name> Slope </name></var>
 <var><name> RVR </name></var>
 <var><name> CO </name></var>
-<parm><name> HSBasic </name><val> 1.0 </val></parm>
+<parm><name> HSBasic </name><val> 1. </val></parm>
 <var><name> HS </name></var>
 
-<parm><name> StarlingA </name><val> 13370 </val></parm>13370=fit;17960
-<parm><name> Starlingm </name><val> 1.91663 </val></parm>
-<parm><name> StarlingS </name><val> 3.30963 </val></parm>5.30963
+<parm><name> StarlingA </name><val> 7500 </val></parm>15230
+<parm><name> Starlingm </name><val> 1.876 </val></parm>
+<parm><name> StarlingS </name><val> 2.85 </val></parm>
 
-<parm><name> RVRa </name><val> 0.035 </val></parm>0.035
-<parm><name> RVRb </name><val> 0.00093 </val></parm>0.00064;0.00093
+<parm><name> RVRa </name><val> 0.035 </val></parm>
+<parm><name> RVRb </name><val> 0.00064 </val></parm>
 
 
 </variables>
@@ -42,7 +42,7 @@
 <curve>
 	<name>Starling</name>
 	<point><x> -4 </x><y>     0 </y><slope> 0 </slope></point>
-	<point><x>  0 </x><y>  5000 </y><slope> 1250 </slope></point>
+	<point><x>  0 </x><y>  5000 </y><slope> 2500 </slope></point>
 	<point><x> 12 </x><y> 12000 </y><slope> 0 </slope></point>
 </curve>
 

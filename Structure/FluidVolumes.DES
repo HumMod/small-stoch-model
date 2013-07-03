@@ -11,11 +11,11 @@
 <var><name> BV </name></var>
 <parm><name> Intake </name><val> 1. </val></parm>
 
-<parm><name> Urinem </name><val> .05 </val></parm>0.1
+<parm><name> Urinem </name><val> .05 </val></parm> 
 
-<parm><name> FluidA </name><val> 7773.28 </val></parm>7773.28
-<parm><name> Fluidm </name><val> 3.63924 </val></parm>3.63924;3.73924
-<parm><name> FluidS </name><val> 11041.9 </val></parm>12042
+<parm><name> FluidA </name><val> 7900 </val></parm>7773.28; calibrate 8020
+<parm><name> Fluidm </name><val> 3.58 </val></parm>3.63924;3.73924 calibrate 3.63
+<parm><name> FluidS </name><val> 15570 </val></parm>12042; calibrate 10810
 <parm><name> Loss </name><val> 0 </val></parm>
 
 </variables>

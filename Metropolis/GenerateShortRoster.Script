@@ -1,0 +1,22 @@
+<script>
+
+
+<launch>
+	<solver>  C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\Model Solver.EXE </solver>
+	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
+</launch>
+
+<continueonerror/>
+<skipaheadonerror/>
+<scramble/>
+
+<restart/>
+
+<?include CalRoster.Script ?>
+
+<dumproster>
+  <filename> Metropolis\CalibrationRoster.txt</filename>
+</dumproster>
+
+<exit/>
+</script>

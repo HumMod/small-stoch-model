@@ -1,0 +1,391 @@
+Filename : Metropolis\Stoch.ICS
+Timestamp : 7/3/2013 11:38 AM
+
+<ics>
+
+<var>
+<name> System.DefaultDx </name>
+<val> 2378.05679731407 </val>
+</var>
+
+<var>
+<name> System.DisplayInterval </name>
+<val> 144000 </val>
+</var>
+
+<var>
+<name> System.Dx </name>
+<val> 436.200705080351 </val>
+</var>
+
+<var>
+<name> System.Pi </name>
+<val> 3.1416 </val>
+</var>
+
+<var>
+<name> System.SolutionInterval </name>
+<val> 288000 </val>
+</var>
+
+<var>
+<name> System.Starting </name>
+<val> 1E+303 </val>
+</var>
+
+<var>
+<name> System.Tries </name>
+<val> 526 </val>
+</var>
+
+<var>
+<name> System.Steps </name>
+<val> 393 </val>
+</var>
+
+<var>
+<name> System.Retries </name>
+<val> 133 </val>
+</var>
+
+<var>
+<name> System.StopAt </name>
+<val> 288000 </val>
+</var>
+
+<var>
+<name> System.X </name>
+<val> 288000 </val>
+</var>
+
+<var>
+<name> System.InitialX </name>
+<val> 0 </val>
+</var>
+
+<var>
+<name> System.BiggestDx </name>
+<val> 2378.05679731407 </val>
+</var>
+
+<var>
+<name> System.SmallestDx </name>
+<val> 243.099487924549 </val>
+</var>
+
+<var>
+<name> System.ElapsedTime </name>
+<val> 0.124992370605469 </val>
+</var>
+
+<var>
+<name> System.IntegrationError </name>
+<val> 0.10458827935616 </val>
+</var>
+
+<var>
+<name> System.WhiteNoise </name>
+<val> 0.562759990600292 </val>
+</var>
+
+<var>
+<name> System.NormalDistribution </name>
+<val> -1.06915047842038 </val>
+</var>
+
+<var>
+<name> CardiacOutput.Index </name>
+<val> 0 </val>
+</var>
+
+<var>
+<name> CardiacOutput.MCFP </name>
+<val> 5.87078995910305 </val>
+</var>
+
+<var>
+<name> CardiacOutput.V0 </name>
+<val> 3663. </val>
+</var>
+
+<var>
+<name> CardiacOutput.slope_a </name>
+<val> 0.3784 </val>
+</var>
+
+<var>
+<name> CardiacOutput.slope_b </name>
+<val> 0.7139 </val>
+</var>
+
+<var>
+<name> CardiacOutput.SlopeB </name>
+<val> 0.007 </val>
+</var>
+
+<var>
+<name> CardiacOutput.Slope </name>
+<val> 0.00750636760574367 </val>
+</var>
+
+<var>
+<name> CardiacOutput.RVR </name>
+<val> 0.00137975460965386 </val>
+</var>
+
+<var>
+<name> CardiacOutput.CO </name>
+<val> 4894.5251832355 </val>
+</var>
+
+<var>
+<name> CardiacOutput.HSBasic </name>
+<val> 1 </val>
+</var>
+
+<var>
+<name> CardiacOutput.HS </name>
+<val> 1.23063438776731 </val>
+</var>
+
+<var>
+<name> CardiacOutput.StarlingA </name>
+<val> 8250. </val>
+</var>
+
+<var>
+<name> CardiacOutput.Starlingm </name>
+<val> 2.0636 </val>
+</var>
+
+<var>
+<name> CardiacOutput.StarlingS </name>
+<val> 3.135 </val>
+</var>
+
+<var>
+<name> CardiacOutput.RVRa </name>
+<val> 0.0385 </val>
+</var>
+
+<var>
+<name> CardiacOutput.RVRb </name>
+<val> 0.000576 </val>
+</var>
+
+<var>
+<name> CardiacOutput.RAP </name>
+<val> -0.95956615108548 </val>
+</var>
+
+<var>
+<name> CardiacOutput.RAPEnd </name>
+<val> -0.882453724533022 </val>
+</var>
+
+<var>
+<name> FluidVolumes.AP </name>
+<val> 103.449930467581 </val>
+</var>
+
+<var>
+<name> FluidVolumes.RDrop </name>
+<val> 0 </val>
+</var>
+
+<var>
+<name> FluidVolumes.RPP </name>
+<val> 103.449930467581 </val>
+</var>
+
+<var>
+<name> FluidVolumes.UOB </name>
+<val> 1.17249652337907 </val>
+</var>
+
+<var>
+<name> FluidVolumes.UO </name>
+<val> 0.95275780933303 </val>
+</var>
+
+<var>
+<name> FluidVolumes.BV </name>
+<val> 4112.10797385021 </val>
+</var>
+
+<var>
+<name> FluidVolumes.Intake </name>
+<val> 1.1 </val>
+</var>
+
+<var>
+<name> FluidVolumes.Urinem </name>
+<val> 0.055 </val>
+</var>
+
+<var>
+<name> FluidVolumes.FluidA </name>
+<val> 8690. </val>
+</var>
+
+<var>
+<name> FluidVolumes.Fluidm </name>
+<val> 3.938 </val>
+</var>
+
+<var>
+<name> FluidVolumes.FluidS </name>
+<val> 17127. </val>
+</var>
+
+<var>
+<name> FluidVolumes.Loss </name>
+<val> 0 </val>
+</var>
+
+<var>
+<name> FluidVolumes.ECFV </name>
+<val> 15931.3081870205 </val>
+</var>
+
+<var>
+<name> FluidVolumes.Change </name>
+<val> 0.0472421906669696 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.TPRE </name>
+<val> 0.0170831921630682 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.KAUTO </name>
+<val> 0.000528 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.TPR </name>
+<val> 0.0211358459901102 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.AutoA </name>
+<val> 0.04983 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.Autom </name>
+<val> 11.946 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.AutoS </name>
+<val> 5638.6 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.TPRB </name>
+<val> 0.0171747565322436 </val>
+</var>
+
+<var>
+<name> FlowAutoregulation.Change </name>
+<val> -4.39508972041941E-08 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.CDROP </name>
+<val> 0 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.CP </name>
+<val> 103.449930467581 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.DELP </name>
+<val> -0.930660401769373 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.KBARO </name>
+<val> 0.00077 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.AFFNA </name>
+<val> 1.01420747260585 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SYMFXD </name>
+<val> 1 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SCLAMP </name>
+<val> 0 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.AffNaA </name>
+<val> 2.31 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.AffNam </name>
+<val> 3.993 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.AffNaS </name>
+<val> 55. </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SympsA </name>
+<val> 1.122 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.Sympsm </name>
+<val> 3.839 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SympsS </name>
+<val> 0.583 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SympsB </name>
+<val> 1.254 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SYMEnd1 </name>
+<val> 1E+303 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SYM </name>
+<val> 1.23063438776731 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.SYMEnd </name>
+<val> 1.23594814342454 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.CPAD </name>
+<val> 104.380590869351 </val>
+</var>
+
+<var>
+<name> BaroreceptorReflex.Change </name>
+<val> -0.000651462281238561 </val>
+</var>
+
+</ics>

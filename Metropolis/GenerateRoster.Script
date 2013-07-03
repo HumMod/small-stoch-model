@@ -1,0 +1,24 @@
+<script>
+
+
+<launch>
+	<solver>  C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\Model Solver.EXE </solver>
+	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
+</launch>
+
+<continueonerror/>
+<skipaheadonerror/>
+<scramble/>
+
+<restart/>
+
+
+<?include ParmRoster.Script ?>
+
+
+<dumproster>
+  <filename> Metropolis\InitialRoster.txt</filename>
+</dumproster>
+
+<exit/>
+</script>

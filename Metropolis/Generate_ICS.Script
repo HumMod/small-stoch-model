@@ -1,0 +1,31 @@
+<script>
+
+
+<launch>
+	<solver>  C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\Model Solver.EXE </solver>
+	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
+</launch>
+
+
+<continueonerror/>
+<skipaheadonerror/>
+<scramble/>
+
+<reset/>
+<restart/>
+
+<gofor>
+	<solutionint> 288000.0 </solutionint>
+	<displayint> 144000.0 </displayint>
+</gofor>
+
+<saveics>
+  <filename> Metropolis\Stoch.ICS </filename>
+</saveics>
+
+<saveics>
+  <filename> Metropolis\Stoch_bak.ICS </filename>
+</saveics>
+<exit/>
+</script>
+

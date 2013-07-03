@@ -1,0 +1,4 @@
+<roster>
+	<var><name>  CardiacOutput.CO </name><format> 2 </format></var>
+	<var><name> FlowAutoregulation.TPR </name><format> 5 </format></var>
+</roster>

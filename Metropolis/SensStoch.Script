@@ -1,0 +1,34 @@
+<script>
+
+
+<launch>
+	<solver> C:\Documents and Settings\Hester_lab\Desktop\Scripts\Model Solver.EXE </solver>
+	<model>C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
+</launch>
+
+<continueonerror/>
+<skipaheadonerror/>
+<scramble/>
+
+<restart/>
+
+
+<?include SensRoster.Script ?>
+
+<loadics>
+  <filename> Metropolis\SensStoch.ICS </filename>
+</loadics>
+
+<restart/>
+<gofor>
+	<solutionint> 288000.0 </solutionint>
+	<displayint> 144000.0 </displayint>
+</gofor>
+
+<dumppoint>
+  <filename> Metropolis\SensOut.txt</filename>
+</dumppoint>
+
+<exit/>
+</script>
+

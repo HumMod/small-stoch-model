@@ -1,0 +1,52 @@
+<script>
+
+
+<launch>
+	<solver>  C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\Model Solver.EXE </solver>
+	<model> C:\Documents and Settings\Hester_lab\Desktop\small-stoch-model\HumMod.DES </model>
+</launch>
+
+<continueonerror/>
+<skipaheadonerror/>
+<scramble/>
+
+<reset/>
+<restart/>
+
+<?include CalRoster.Script ?>
+
+<dumproster>
+  <filename> Metropolis\BleedRoster.txt</filename>
+</dumproster>
+
+
+<loadics>
+  <filename>  Metropolis\Stoch.ICS </filename>
+</loadics>
+
+<skiptohereonerror/>
+<restart/>
+
+<gofor>
+	<solutionint> 288000.0 </solutionint>
+	<displayint> 144000.0 </displayint>
+</gofor>
+
+<setvalue>
+  <var> FluidVolumes.Loss </var>
+  <val> 37.5 </val><!--should be 37.5?-->
+</setvalue>
+
+<gofor>
+	<solutionint> 20.0 </solutionint>
+	<displayint> 5.0 </displayint>
+</gofor>
+
+<dumpsegment>
+  <filename> Metropolis\BleedData.txt </filename>
+<start> 576000 </start>
+<stop> 576020 </stop>
+</dumpsegment>
+
+<exit/>
+</script> 

@@ -1,0 +1,28 @@
+<roster>
+	<var><name> CardiacOutput.V0  </name><format> 0 </format> </var>
+	<var><name> CardiacOutput.slope_a </name><format> 4 </format> </var>
+	<var><name> CardiacOutput.slope_b </name><format> 4 </format> </var>
+	<var><name>  FluidVolumes.Intake </name><format> 3 </format> </var>
+	<var><name>  FlowAutoregulation.KAUTO </name><format> 5 </format> </var>
+	<var><name>  BaroreceptorReflex.KBARO </name><format> 5 </format> </var>
+	<var><name> CardiacOutput.StarlingA </name><format> 1 </format> </var>
+	<var><name>  CardiacOutput.Starlingm </name><format> 1 </format> </var>
+	<var><name> CardiacOutput.StarlingS  </name><format> 1 </format> </var>
+	<var><name> FluidVolumes.FluidA </name><format> 3 </format> </var>
+	<var><name> FluidVolumes.Fluidm  </name><format> 3 </format> </var>
+	<var><name> FluidVolumes.FluidS  </name><format> 3 </format> </var>
+	<var><name> FluidVolumes.Urinem  </name><format> 3 </format> </var>
+	<var><name> FlowAutoregulation.AutoA </name><format> 3 </format> </var>
+	<var><name> FlowAutoregulation.Autom </name><format> 3 </format> </var>
+	<var><name> FlowAutoregulation.AutoS </name><format> 3 </format> </var>
+	<var><name> BaroreceptorReflex.AffNaA </name><format> 3 </format> </var>
+	<var><name> BaroreceptorReflex.AffNam  </name><format> 3 </format> </var>
+	<var><name> BaroreceptorReflex.AffNaS  </name><format> 3 </format> </var>
+	<var><name> BaroreceptorReflex.SympsA </name><format> 3 </format> </var>
+	<var><name> BaroreceptorReflex.Sympsm </name><format> 3 </format> </var>
+	<var><name> BaroreceptorReflex.SympsS </name><format> 3 </format> </var>
+	<var><name> BaroreceptorReflex.SympsB </name><format> 3 </format> </var>
+	<var><name> CardiacOutput.RVRa </name><format> 5 </format> </var>
+	<var><name> CardiacOutput.RVRb </name><format> 5 </format> </var>
+
+</roster>

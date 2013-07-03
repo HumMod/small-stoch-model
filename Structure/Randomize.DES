@@ -70,7 +70,7 @@
 
 
 
-<block><name> Everything  </name>
+<block><name> Randomize </name>
 
 <def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
 <def><name> CardiacOutput.slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
@@ -89,6 +89,7 @@
 <def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
 <def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
 <def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+
 
 
 <def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>

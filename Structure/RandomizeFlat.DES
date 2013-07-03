@@ -1,0 +1,272 @@
+
+<structure><name> RandomizeFlat </name>
+
+<variables>
+
+<whitenoise><name> V0 </name><lowerlim> 0.9 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>SOFT
+<whitenoise><name> Slope_a </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise> SOFT
+<whitenoise><name> Slope_b </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise> SOFT (.143=HS range from lit)
+<whitenoise><name> SlopeB </name><lowerlim> 0.75 </lowerlim><upperlim> 1.25 </upperlim></whitenoise> SOFT
+
+<whitenoise><name> StarlingA </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>HARD 0.1
+<whitenoise><name> Starlingm </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>SOFT
+<whitenoise><name> StarlingS </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>SOFT
+<whitenoise><name> HSBasic </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>SOFT; maybe constant
+<whitenoise><name> RDrop </name><lowerlim> 1  </lowerlim><upperlim> 1 </upperlim></whitenoise>0
+<whitenoise><name> Intake </name><lowerlim> 0.5 </lowerlim><upperlim> 1. </upperlim></whitenoise>
+
+<whitenoise><name> KAUTO </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+<whitenoise><name> KBARO </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+
+<whitenoise><name> FluidA </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+<whitenoise><name> Fluidm </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+<whitenoise><name> FluidS </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+
+<whitenoise><name> Urinem </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+
+<whitenoise><name> AutoA </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+<whitenoise><name> Autom </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+<whitenoise><name> AutoS </name><lowerlim> 0.75 </lowerlim><upperlim> 2 </upperlim></whitenoise>
+
+<whitenoise><name> AffNaA </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>Hard (suggested from Rogers, Paton, Schwaber, Am J Physiol Regulatory 1993) 0.1
+<parm><name> ModAffNaA </name><val> 0 </val></parm>
+<whitenoise><name> AffNam </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise>SOFT
+<whitenoise><name> AffNaS </name><lowerlim> 0.75 </lowerlim><upperlim> 2 </upperlim></whitenoise>SOFT
+<parm><name> ModAffNaS </name><val> 0 </val></parm>
+
+<whitenoise><name> SympsA </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>HARD .05
+<parm><name> ModSympsA </name><val> 0 </val></parm>
+<whitenoise><name> Sympsm </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>SOFT
+<whitenoise><name> SympsS </name><lowerlim> 1  </lowerlim><upperlim> 2 </upperlim></whitenoise>HARD  .15
+<parm><name> ModSympsS </name><val> 0 </val></parm>
+<whitenoise><name> SympsB </name><lowerlim> 0.25  </lowerlim><upperlim> 1.25 </upperlim></whitenoise>HARD .25
+
+<whitenoise><name> RVRA </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>HARD .075
+<whitenoise><name> RVRB </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>HARD .01`
+
+</variables>
+
+<definitions>
+
+<block><name> Randomize </name>
+
+<def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
+<def><name> CardiacOutput.slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
+<def><name> CardiacOutput.SlopeB </name><val> CardiacOutput.SlopeB * SlopeB </val></def>
+<def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
+<def><name> CardiacOutput.HSBasic </name><val> CardiacOutput.HSBasic * HSBasic </val></def>
+<def><name> CardiacOutput.StarlingA </name><val> CardiacOutput.StarlingA  * StarlingA </val></def>
+<def><name> CardiacOutput.Starlingm </name><val> CardiacOutput.Starlingm * Starlingm </val></def>
+<def><name> CardiacOutput.StarlingS </name><val> CardiacOutput.StarlingS * StarlingS </val></def>
+
+<def><name> CardiacOutput.RVRa </name><val> CardiacOutput.RVRa * RVRA </val></def>
+<def><name> CardiacOutput.RVRb </name><val> CardiacOutput.RVRb * RVRB </val></def>
+
+<def><name> FluidVolumes.FluidA </name><val> FluidVolumes.FluidA * FluidA </val></def>
+<def><name> FluidVolumes.Fluidm </name><val> FluidVolumes.Fluidm * Fluidm </val></def>
+<def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
+
+<def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
+<def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+
+<def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
+<def><name> FlowAutoregulation.Autom </name><val> FlowAutoregulation.Autom * Autom </val></def>
+<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
+
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
+<def><name> BaroreceptorReflex.AffNam </name><val> BaroreceptorReflex.AffNam * AffNam</val></def>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.AffNaS * AffNaS</val></def>
+
+<def><name> BaroreceptorReflex.SympsA </name><val> BaroreceptorReflex.SympsA * SympsA</val></def>
+<def><name> BaroreceptorReflex.Sympsm </name><val> BaroreceptorReflex.Sympsm * Sympsm</val></def>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * SympsS</val></def>
+<def><name> BaroreceptorReflex.SympsB </name><val> BaroreceptorReflex.SympsB * SympsB</val></def>
+
+<def><name> FlowAutoregulation.KAUTO </name><val> FlowAutoregulation.KAUTO * KAUTO </val></def>
+<def><name> BaroreceptorReflex.KBARO </name><val> BaroreceptorReflex.KBARO * KBARO </val></def>
+</block>
+
+<block><name> RSymps </name>
+<def><name> BaroreceptorReflex.SympsA </name><val> BaroreceptorReflex.SympsA * SympsA</val></def>
+<def><name> BaroreceptorReflex.Sympsm </name><val> BaroreceptorReflex.Sympsm * Sympsm</val></def>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * SympsS</val></def>
+<def><name> BaroreceptorReflex.SympsB </name><val> BaroreceptorReflex.SympsB * SympsB</val></def>
+</block>
+
+<block><name> RAffNa </name>
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
+<def><name> BaroreceptorReflex.AffNam </name><val> BaroreceptorReflex.AffNam * AffNam</val></def>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.AffNaS * AffNaS</val></def>
+</block>
+
+
+<block><name> RTPR </name>
+<def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
+<def><name> FlowAutoregulation.Autom </name><val> FlowAutoregulation.Autom * Autom </val></def>
+<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
+<def><name> CardiacOutput.RVRa </name><val> CardiacOutput.RVRa * RVRA </val></def>
+<def><name> CardiacOutput.RVRb </name><val> CardiacOutput.RVRb * RVRB </val></def>
+</block>
+
+<block><name> RFluid </name>
+<def><name> FluidVolumes.FluidA </name><val> FluidVolumes.FluidA * FluidA </val></def>
+<def><name> FluidVolumes.Fluidm </name><val> FluidVolumes.Fluidm * Fluidm </val></def>
+<def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
+</block>
+
+<block><name> RMCFP </name>
+<def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
+<def><name> CardiacOutput.slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
+<def><name> CardiacOutput.SlopeB </name><val> CardiacOutput.SlopeB * SlopeB </val></def>
+<def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
+</block>
+
+<block><name> RStarling </name>
+<def><name> CardiacOutput.HSBasic </name><val> CardiacOutput.HSBasic * HSBasic </val></def>
+<def><name> CardiacOutput.StarlingA </name><val> CardiacOutput.StarlingA  * StarlingA </val></def>
+<def><name> CardiacOutput.Starlingm </name><val> CardiacOutput.Starlingm * Starlingm </val></def>
+<def><name> CardiacOutput.StarlingS </name><val> CardiacOutput.StarlingS * StarlingS </val></def>
+</block>
+
+<block><name> FluidBalance </name>
+<def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
+<def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+</block>
+
+
+
+<block><name> RSympsA </name>
+<def><name> BaroreceptorReflex.SympsA </name><val> BaroreceptorReflex.SympsA * SympsA</val></def>
+</block>
+
+<block><name> RSympsm </name>
+<def><name> BaroreceptorReflex.Sympsm </name><val> BaroreceptorReflex.Sympsm * Sympsm</val></def>
+</block>
+
+<block><name> RSympsS </name>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * SympsS</val></def>
+</block>
+
+<block><name> RSympsB </name>
+<def><name> BaroreceptorReflex.SympsB </name><val> BaroreceptorReflex.SympsB * SympsB</val></def>
+</block>
+
+
+<block><name> RAffNaA </name>
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
+</block>
+
+<block><name> RAffNam </name>
+<def><name> BaroreceptorReflex.AffNam </name><val> BaroreceptorReflex.AffNam * AffNam</val></def>
+</block>
+
+<block><name> RAffNaS </name>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.AffNaS * AffNaS</val></def>
+</block>
+
+<block><name> RAutoA </name>
+<def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
+</block>
+
+<block><name> RAutom </name>
+<def><name> FlowAutoregulation.Autom </name><val> FlowAutoregulation.Autom * Autom </val></def>
+</block>
+
+<block><name> RAutoS </name>
+<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
+</block>
+
+<block><name> RRVRa </name>
+<def><name> CardiacOutput.RVRa </name><val> CardiacOutput.RVRa * RVRA </val></def>
+</block>
+
+<block><name> RRVRb </name>
+<def><name> CardiacOutput.RVRb </name><val> CardiacOutput.RVRb * RVRB </val></def>
+</block>
+
+
+<block><name> RFluidA </name>
+<def><name> FluidVolumes.FluidA </name><val> FluidVolumes.FluidA * FluidA </val></def>
+</block>
+
+<block><name> RFluidm </name>
+<def><name> FluidVolumes.Fluidm </name><val> FluidVolumes.Fluidm * Fluidm </val></def>
+</block>
+
+<block><name> RFluidS </name>
+<def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
+</block>
+
+
+<block><name> Rslopea </name>
+<def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
+</block>
+
+<block><name> Rslopeb </name>
+<def><name> CardiacOutput.slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
+</block>
+
+<block><name> RslopeB </name>
+<def><name> CardiacOutput.SlopeB </name><val> CardiacOutput.SlopeB * SlopeB </val></def>
+</block>
+
+<block><name> RV0 </name>
+<def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
+</block>
+
+<block><name> RHS </name>
+<def><name> CardiacOutput.HSBasic </name><val> CardiacOutput.HSBasic * HSBasic </val></def>
+</block>
+
+<block><name> RStarlingA </name>
+<def><name> CardiacOutput.StarlingA </name><val> CardiacOutput.StarlingA  * StarlingA </val></def>
+</block>
+
+<block><name> RStarlingm </name>
+<def><name> CardiacOutput.Starlingm </name><val> CardiacOutput.Starlingm * Starlingm </val></def>
+</block>
+
+<block><name> RStarlingS </name>
+<def><name> CardiacOutput.StarlingS </name><val> CardiacOutput.StarlingS * StarlingS </val></def>
+</block>
+
+<block><name> Rurinem </name>
+<def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Intake * Intake </val></def>
+</block>
+
+<block><name> RIntake </name>
+<def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+</block>
+
+<block><name> BaseSensitives </name>
+<def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
+<def><name> CardiacOutput.SlopeB </name><val> CardiacOutput.SlopeB * SlopeB </val></def>
+<def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
+<def><name> CardiacOutput.StarlingA </name><val> CardiacOutput.StarlingA  * StarlingA </val></def>
+<def><name> CardiacOutput.RVRb </name><val> CardiacOutput.RVRb * RVRB </val></def>
+<def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
+<def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+<def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
+<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.AffNaS * AffNaS</val></def>
+<def><name> BaroreceptorReflex.Sympsm </name><val> BaroreceptorReflex.Sympsm * Sympsm</val></def>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * SympsS</val></def>
+<def><name> BaroreceptorReflex.SympsB </name><val> BaroreceptorReflex.SympsB * SympsB</val></def>
+</block>
+
+<block><name> ReducedSensitives </name>
+<def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
+<def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+<def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
+<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.AffNaS * AffNaS</val></def>
+<def><name> BaroreceptorReflex.SympsB </name><val> BaroreceptorReflex.SympsB * SympsB</val></def>
+</block>
+
+</definitions>
+
+
+
+</structure>

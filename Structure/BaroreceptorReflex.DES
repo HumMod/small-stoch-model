@@ -3,7 +3,6 @@
 <variables> =====================================
 
 <parm><name> CDROP </name><val> 0.0 </val></parm>
-
 <var><name> CP </name></var>
 <var><name> DELP </name></var>
 <parm><name> KBARO </name><val> 0.0007 </val></parm>
@@ -11,15 +10,14 @@
 <parm><name> SYMFXD </name><val> 1.0 </val></parm>
 <parm><name> SCLAMP </name><val> FALSE </val></parm>
 
-<parm><name> AffNaA </name><val> 2.067 </val></parm>
-<parm><name> AffNam </name><val> 3.787 </val></parm>
-<parm><name> AffNaS </name><val> 39.235 </val></parm>
+<parm><name> AffNaA </name><val> 2.1 </val></parm>
+<parm><name> AffNam </name><val> 3.63 </val></parm>
+<parm><name> AffNaS </name><val> 50 </val></parm>39.65
 
-<parm><name> SympsA </name><val>1.0041 </val></parm>
-<parm><name> Sympsm </name><val>3.605 </val></parm>3.60464
-<parm><name> SympsS </name><val> 0.535 </val></parm>.534907
-<parm><name> SympsB </name><val> 0.933 </val></parm>.93333
-
+<parm><name> SympsA </name><val>1.02 </val></parm>
+<parm><name> Sympsm </name><val>3.49 </val></parm>3.60464
+<parm><name> SympsS </name><val> 0.53 </val></parm>.534907
+<parm><name> SympsB </name><val> 1.14 </val></parm>.93333
 <var><name> SYMEnd1 </name></var>
 
 </variables>
@@ -85,9 +83,7 @@
 </block>
 
 <block><name> Afferents </name>
-<def><name> AFFNA </name><val>  AffNaA * ( ( DELP + 40 MAX 0 ) ^ AffNam ) / ( ( ( DELP + 40 MAX 0 ) ^ AffNam ) + ( AffNaS ^ AffNam ) ) MAX 0 </val></def>
-
-<!--<def><name> AFFNA </name><val> AffNa [ DELP ] </val></def>-->
+<def><name> AFFNA </name><val>  AffNaA * ( ( DELP + AffNaS MAX 0 ) ^ AffNam ) / ( ( ( DELP + AffNaS MAX 0 ) ^ AffNam ) + ( AffNaS ^ AffNam ) ) MAX 0 </val></def>
 </block>
 
 <block><name> Sym </name>
@@ -99,7 +95,6 @@
 <def><name> SYMEnd </name><val> SympsA * ( SympsS ^ Sympsm ) / ( ( AFFNA ^ Sympsm ) + ( SympsS ^ Sympsm ) )  + SympsB </val></def>
 </false>
 </if>
-<!--<def><name> SYMEnd </name><val> Symps [ AFFNA ] </val></def>-->
 </block>
 
 </definitions>

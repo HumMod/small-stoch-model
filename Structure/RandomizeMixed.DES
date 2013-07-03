@@ -1,0 +1,127 @@
+
+<structure><name> RandomizeMixed </name>
+
+<variables>
+
+<normaldist><name> V0 </name><mean> 1.00 </mean><stddev> 0.3 </stddev></normaldist>SOFT
+<whitenoise><name> Slope_a </name><lowerlim> 0.5 </lowerlim><upperlim> 1.5 </upperlim></whitenoise> SOFT
+<whitenoise><name> Slope_b </name><lowerlim> 0.54 </lowerlim><upperlim> 1.6 </upperlim></whitenoise> SOFT (.143=HS range from lit)
+<whitenoise><name> SlopeB </name><lowerlim> 0.48 </lowerlim><upperlim> 1.41 </upperlim></whitenoise> SOFT
+<normaldist><name> Intake </name><mean> 1. </mean><stddev> 0.31 </stddev></normaldist>SOFT; maybe constant
+
+<whitenoise><name> HSBasic </name><lowerlim> .73  </lowerlim><upperlim> 1.3 </upperlim></whitenoise>0
+<whitenoise><name> RDrop </name><lowerlim> 1  </lowerlim><upperlim> 1 </upperlim></whitenoise>0
+<whitenoise><name> KAUTO </name><lowerlim> 0.5  </lowerlim><upperlim> 1.5 </upperlim></whitenoise>
+<whitenoise><name> KBARO </name><lowerlim> 0.5 </lowerlim><upperlim> 1.43 </upperlim></whitenoise>
+
+<whitenoise><name> StarlingA </name><lowerlim> 0.73 </lowerlim><upperlim> 1.325 </upperlim></whitenoise>SOFT
+<normaldist><name> Starlingm </name><mean> 1. </mean><stddev> 0.3 </stddev></normaldist>SOFT; maybe constant
+<whitenoise><name> StarlingS </name><lowerlim> 0.58 </lowerlim><upperlim> 1.34 </upperlim></whitenoise>SOFT
+
+<whitenoise><name> FluidA </name><lowerlim> 0.5 </lowerlim><upperlim> 1.46 </upperlim></whitenoise>
+<whitenoise><name> Fluidm </name><lowerlim> 0.51 </lowerlim><upperlim> 1.44 </upperlim></whitenoise>
+<normaldist><name> FluidS </name><mean> 1.00 </mean><stddev> 0.267 </stddev></normaldist>
+
+<normaldist><name> Urinem </name><mean> 1.00 </mean><stddev> 0.276 </stddev></normaldist>
+
+<whitenoise><name> AutoA </name><lowerlim> 0.57 </lowerlim><upperlim> 1.65 </upperlim></whitenoise>
+<whitenoise><name> Autom </name><lowerlim> 0.53 </lowerlim><upperlim> 1.53 </upperlim></whitenoise>
+<normaldist><name> AutoS </name><mean> 1.00 </mean><stddev> 0.12 </stddev></normaldist>
+<normaldist><name> AutoS1 </name><mean> 1.00 </mean><stddev> 0.204 </stddev></normaldist>
+<normaldist><name> AutoS2 </name><mean> 1.00 </mean><stddev> 0.204 </stddev></normaldist>
+<normaldist><name> AutoS3 </name><mean> 1.00 </mean><stddev> 0.078 </stddev></normaldist>
+
+<normaldist><name> AffNaA </name><mean> 1.00 </mean><stddev> 0.25 </stddev></normaldist>
+Hard (suggested from Rogers, Paton, Schwaber, Am J Physiol Regulatory 1993) 0.1
+<parm><name> ModAffNaA </name><val> 0 </val></parm>
+<normaldist><name> AffNam </name><mean> 1.00 </mean><stddev> 0.25 </stddev></normaldist>
+<whitenoise><name> AffNaS </name><lowerlim> 0.56 </lowerlim><upperlim> 1.62 </upperlim></whitenoise>SOFT
+<parm><name> ModAffNaS </name><val> 0 </val></parm>
+
+<whitenoise><name> SympsA </name><lowerlim> 0.5 </lowerlim><upperlim> 1.47 </upperlim></whitenoise>HARD .05
+<parm><name> ModSympsA </name><val> 0 </val></parm>
+<normaldist><name> Sympsm </name><mean> 1.00  </mean><stddev> 0.29 </stddev></normaldist>HARD .25
+<normaldist><name> SympsS </name><mean> 1.00  </mean><stddev> 0.29 </stddev></normaldist>HARD .25
+<parm><name> ModSympsS </name><val> 0 </val></parm>
+<whitenoise><name> SympsB </name><lowerlim> 0.79  </lowerlim><upperlim> 1.29 </upperlim></whitenoise>
+
+<whitenoise><name> RVRA </name><lowerlim> 0.58  </lowerlim><upperlim> 1.44 </upperlim></whitenoise>
+<whitenoise><name> RVRB </name><lowerlim> 0.53  </lowerlim><upperlim> 1.34 </upperlim></whitenoise>
+
+<normaldist><name>  fsm </name><mean> -0.000228 </mean><stddev> 0.0000334724 </stddev></normaldist>
+<normaldist><name> fsb </name><mean> 12.6784 </mean><stddev> 0.369631 </stddev></normaldist>
+<normaldist><name> umm </name><mean> 2.51553 </mean><stddev> 0.309282 </stddev></normaldist>
+<normaldist><name> umb </name><mean> 0.952157 </mean><stddev> 0.0169593 </stddev></normaldist>
+<normaldist><name> aam </name><mean> -16.2004</mean><stddev> 2.22543 </stddev></normaldist>
+<normaldist><name> aab </name><mean> 4.35906 </mean><stddev> 0.0952317 </stddev></normaldist>
+<normaldist><name> aaam </name><mean> -0.0034899 </mean><stddev> 0.000470718 </stddev></normaldist>
+<normaldist><name> aaab </name><mean> 0.00103008 </mean><stddev> 0.0000201432 </stddev></normaldist>
+<normaldist><name> anm </name><mean> 0.00334267 </mean><stddev> 0.00043456 </stddev></normaldist>
+<normaldist><name> anb </name><mean> 0.0227 </mean><stddev> 0.00100996 </stddev></normaldist>
+
+</variables>
+
+<definitions>
+<block><name> RandomizeAuto </name>
+<def><name> FlowAutoregulation.AutoS </name><val> FlowAutoregulation.AutoS * AutoS </val></def>
+
+</block>
+
+<block><name> SympsA </name>
+<def><name> BaroreceptorReflex.SympsA </name><val> BaroreceptorReflex.SympsA * ( SympsA + ModSympsA ) </val></def>
+</block>
+
+<block><name> SympsS </name>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * ( SympsS + ModSympsS ) </val></def>
+</block>
+
+<block><name> AffNaA </name>
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.SympsA * ( AffNaA + ModAffNaA ) </val></def>
+</block>
+
+<block><name> AffNaS </name>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.SympsS * ( AffNaS + ModAffNaS ) </val></def>
+</block>
+
+
+
+<block><name> Randomize </name>
+
+<def><name> CardiacOutput.slope_a </name><val> CardiacOutput.slope_a * Slope_a </val></def>
+<def><name> CardiacOutput.slope_b </name><val> CardiacOutput.slope_b * Slope_b </val></def>
+<def><name> CardiacOutput.SlopeB </name><val> CardiacOutput.SlopeB * SlopeB </val></def>
+<def><name> CardiacOutput.V0 </name><val> CardiacOutput.V0 * V0 </val></def>
+<def><name> CardiacOutput.HSBasic </name><val> CardiacOutput.HSBasic * HSBasic </val></def>
+<def><name> CardiacOutput.StarlingA </name><val> CardiacOutput.StarlingA  * StarlingA </val></def>
+<def><name> CardiacOutput.Starlingm </name><val> CardiacOutput.Starlingm * Starlingm </val></def>
+<def><name> CardiacOutput.StarlingS </name><val> CardiacOutput.StarlingS * StarlingS </val></def>
+
+<def><name> FluidVolumes.FluidA </name><val> FluidVolumes.FluidA * FluidA </val></def>
+<def><name> FluidVolumes.Fluidm </name><val> FluidVolumes.Fluidm * Fluidm </val></def>
+<def><name> FluidVolumes.FluidS </name><val> FluidVolumes.FluidS * FluidS </val></def>
+<def><name> FluidVolumes.Urinem </name><val> FluidVolumes.Urinem * Urinem </val></def>
+<def><name> FluidVolumes.Intake </name><val> FluidVolumes.Intake * Intake </val></def>
+
+<def><name> FlowAutoregulation.AutoA </name><val> FlowAutoregulation.AutoA * AutoA </val></def>
+<def><name> FlowAutoregulation.KAUTO </name><val> FlowAutoregulation.KAUTO * KAUTO </val></def>
+
+<def><name> FlowAutoregulation.AutoS </name><val> ( 1 / 3 ) * ( ( FlowAutoregulation.AutoS1 * AutoS1 ) + ( FlowAutoregulation.AutoS1 * AutoS1 ) + ( FlowAutoregulation.AutoS1 * AutoS1 ) )</val></def>
+
+<def><name> BaroreceptorReflex.AffNaA </name><val> BaroreceptorReflex.AffNaA * AffNaA</val></def>
+<def><name> BaroreceptorReflex.AffNaS </name><val> BaroreceptorReflex.AffNaS * AffNaS</val></def>
+<def><name> BaroreceptorReflex.SympsA </name><val> BaroreceptorReflex.SympsA * SympsA</val></def>
+<def><name> BaroreceptorReflex.Sympsm </name><val> BaroreceptorReflex.Sympsm * Sympsm</val></def>
+<def><name> BaroreceptorReflex.SympsS </name><val> BaroreceptorReflex.SympsS * SympsS</val></def>
+<def><name> BaroreceptorReflex.KBARO </name><val> BaroreceptorReflex.KBARO * KBARO </val></def>
+
+<def><name> FlowAutoregulation.Autom </name><val> FluidVolumes.FluidS * fsm + fsb </val></def>
+<def><name>  BaroreceptorReflex.SympsB </name><val> FluidVolumes.Urinem * umm + umb </val></def>
+<def><name> BaroreceptorReflex.AffNam </name><val> FlowAutoregulation.AutoA * aam + aab </val></def>
+<def><name> CardiacOutput.RVRb </name><val> FlowAutoregulation.AutoA * aaam + aaab </val></def>
+<def><name> CardiacOutput.RVRa </name><val> BaroreceptorReflex.AffNaA * anm + anb </val></def>
+
+
+</block>
+</definitions>
+
+</structure>

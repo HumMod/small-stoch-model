@@ -6,9 +6,9 @@
 <parm><name> KAUTO </name><val> 0.00048 </val></parm>
 <var><name> TPR </name></var>
 
-<parm><name> AutoA </name><val>0.04533359 </val></parm>
-<parm><name> Autom </name><val> 10.6449 </val></parm>
-<parm><name> AutoS </name><val> 5509.54 </val></parm>5710
+<parm><name> AutoA </name><val>0.0453 </val></parm>
+<parm><name> Autom </name><val> 10.86 </val></parm>
+<parm><name> AutoS </name><val> 5126 </val></parm> 5509; 5126 comes from calibration, along with 12% s.d.; latest calibration 4870 \pm 1020
 
 </variables>
 
