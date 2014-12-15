@@ -1,5 +1,5 @@
-Filename : Metropolis\Stoch.ICS
-Timestamp : 7/3/2013 11:38 AM
+Filename : Metropolis\Stoch_bak.ICS
+Timestamp : 8/28/2013 4:13 PM
 
 <ics>
 
@@ -75,7 +75,7 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> System.ElapsedTime </name>
-<val> 0.124992370605469 </val>
+<val> 0.125 </val>
 </var>
 
 <var>
@@ -85,12 +85,12 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> System.WhiteNoise </name>
-<val> 0.562759990600292 </val>
+<val> -0.362370596901686 </val>
 </var>
 
 <var>
 <name> System.NormalDistribution </name>
-<val> -1.06915047842038 </val>
+<val> -0.373802193304897 </val>
 </var>
 
 <var>
@@ -280,7 +280,7 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> FlowAutoregulation.AutoS </name>
-<val> 5126 </val>
+<val>  5003.9 </val>
 </var>
 
 <var>
@@ -330,7 +330,7 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> BaroreceptorReflex.AffNaA </name>
-<val> 2.1 </val>
+<val>  1.64083 </val>
 </var>
 
 <var>
@@ -345,7 +345,7 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> BaroreceptorReflex.SympsA </name>
-<val> 1.02 </val>
+<val>  0.839132 </val>
 </var>
 
 <var>
@@ -360,7 +360,7 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> BaroreceptorReflex.SympsB </name>
-<val> 1.14 </val>
+<val>  1.23588 </val>
 </var>
 
 <var>

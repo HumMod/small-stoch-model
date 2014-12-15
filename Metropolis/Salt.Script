@@ -13,11 +13,15 @@
 <reset/>
 <restart/>
 
-
 <?include CalRoster.Script ?>
 
+<dumproster>
+  <filename> Metropolis\BleedRoster.txt</filename>
+</dumproster>
+
+
 <loadics>
-  <filename>   Metropolis\Stoch.ICS </filename>
+  <filename>  Metropolis\Stoch.ICS </filename>
 </loadics>
 
 <skiptohereonerror/>
@@ -25,15 +29,23 @@
 
 <gofor>
 	<solutionint> 28800.0 </solutionint>
-	<displayint> 14400.0 </displayint>
+	<displayint> 28800.0 </displayint>
 </gofor>
 
-<dumppoint>
-  <filename> Metropolis\Calibrate.txt </filename>
-</dumppoint>
+<setvalue>
+  <var> FluidVolumes.Intake </var>
+  <val> 2 </val><!--should be 37.5?-->
+</setvalue>
 
+<gofor>
+	<solutionint> 28800.0 </solutionint>
+	<displayint> 28800.0 </displayint>
+</gofor>
 
-
+<dumpsolution>
+  <filename> Metropolis\BleedData.txt </filename>
+</dumpsolution>
 
 <exit/>
-</script>
+</script> 
+

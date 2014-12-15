@@ -1,5 +1,5 @@
 Filename : Metropolis\Stoch.ICS
-Timestamp : 7/3/2013 11:38 AM
+Timestamp : 8/28/2013 3:22 PM
 
 <ics>
 
@@ -75,7 +75,7 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> System.ElapsedTime </name>
-<val> 0.124992370605469 </val>
+<val> 0.125007629394531 </val>
 </var>
 
 <var>
@@ -85,12 +85,12 @@ Timestamp : 7/3/2013 11:38 AM
 
 <var>
 <name> System.WhiteNoise </name>
-<val> 0.562759990600292 </val>
+<val> -0.419666861845025 </val>
 </var>
 
 <var>
 <name> System.NormalDistribution </name>
-<val> -1.06915047842038 </val>
+<val> 0.664383439265371 </val>
 </var>
 
 <var>
